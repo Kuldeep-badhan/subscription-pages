@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/loggedInPage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,103 @@
     />
     <title>Logged In page</title>
   </head>
-  <body>
-    to be made
+  <body class="sub-home">
+    <div class="sidebar">
+      <div class="sidebar__top">
+        <div class="sidebar__logo">Title</div>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              
+              <a href="#" class="sidebar__nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" height="22" class="text-[#95B4F0] shrink-0 grow-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <span>
+
+                  Home
+                </span>
+              
+              </a>
+            </li>
+            <li class="sidebar__nav-item"">
+              <a href="#" class="sidebar__nav-link">Community Showcase</a>
+            </li>
+            <li class="sidebar__nav-item"">
+              <a href="#" class="sidebar__nav-link">Manage Subs</a>
+            </li>
+            <li class="sidebar__nav-item"">
+              <a href="#" class="sidebar__nav-link">Help & FAQ</a>
+            </li>
+            <li class="sidebar__nav-item"">
+              <a href="#" class="sidebar__nav-link">About & Careers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sidebar__bottom">
+        <button class="sidebar__notification-btn">Notifications</button>
+        <div class="sidebar__user-box">
+          <img src="avatar.jpg" alt="User Avatar" class="sidebar__avatar" />
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-name">John Doe</div>
+            <button class="sidebar__menu-toggle-btn">Toggle Menu</button>
+            <div class="sidebar__menu">
+              <ul class="sidebar__menu-list">
+                <li class="sidebar__menu-item">
+                  <a href="#" class="sidebar__menu-link">Manage Subs</a>
+                </li>
+                <li class="sidebar__menu-item">
+                  <a href="#" class="sidebar__menu-link">View Pass</a>
+                </li>
+                <li class="sidebar__menu-item">
+                  <a href="#" class="sidebar__menu-link">Go to Discord</a>
+                </li>
+                <li class="sidebar__menu-item">
+                  <a href="#" class="sidebar__menu-link">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main__search">
+        <input type="text" class="main__search-input" placeholder="Search..." />
+        <button class="main__search-icon">search</button>
+      </div>
+      <div class="main__user-box">
+        <div class="main__user-gradient-box">
+          <img src="avatar.jpg" alt="User Avatar" class="main__user-avatar" />
+          <div class="main__user-info">
+            <div class="main__user-name">John Doe</div>
+            <div class="main__user-jobs">0 Jobs</div>
+          </div>
+          <a href="#" class="main__user-plan-btn">Purchase Plan</a>
+        </div>
+      </div>
+      <div class="main__navbar">
+        <div class="main__nav-items">
+          <div class="main__nav-item">Hot</div>
+          <div class="main__nav-item">New</div>
+          <div class="main__nav-item">Top</div>
+          <div class="main__nav-item">Favorited</div>
+        </div>
+        <div class="main__nav-items main__nav-items--right">
+          <div class="main__nav-item main__nav-item--active">All</div>
+          <div class="main__nav-item">Grids</div>
+          <div class="main__nav-item">Upscales</div>
+          <div class="main__nav-item main__nav-item--emoji">😀</div>
+          <div class="main__nav-item main__nav-item--emoji">👍</div>
+          <div class="main__nav-item main__nav-item--emoji">🔥</div>
+          <div class="main__nav-item main__nav-item--emoji">❤️</div>
+        </div>
+      </div>
+      <div class="main__generated-image">
+        When you generate an image, it will appear here.
+      </div>
+      <a href="#" class="main__discord-link"
+        >Join the Discord to start creating!</a
+      >
+    </div>
   </body>
 </html>
