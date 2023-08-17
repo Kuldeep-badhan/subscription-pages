@@ -12,13 +12,14 @@
     &__top {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 20px;
+      align-items: start;
+      padding: 30px 20px;
     }
 
     &__logo {
-      font-size: 20px;
-      margin-bottom: 20px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      margin-left: 15px;
       color: #dce0eb;
     }
 
@@ -33,10 +34,15 @@
         width: 100%;
       }
 
+      hr {
+        margin-block: 15px;
+        color: #131929;
+      }
+
       &-link {
         text-decoration: none;
         color: #dce0eb;
-        padding: 10px 15px;
+        padding: 12px;
         border-radius: 10px;
         width: 100%;
         display: block;
@@ -44,13 +50,28 @@
         gap: 15px;
         align-items: center;
         justify-content: start;
+        &--text {
+          font-size: 15px;
+        }
         svg {
-          color: white;
+          color: #8aa7e1;
           width: 20px;
           height: 20px;
         }
+        .sidebar__icon--light {
+          display: flex;
+          align-items: center;
+          svg {
+            color: #5a7dc1;
+          }
+        }
+        &--small {
+          font-size: 14px;
+        }
+
         &:hover {
-          background-color: #172b51;
+          background-color: #172b5180;
+          //   background-color: #172b51;
         }
       }
     }
@@ -66,10 +87,9 @@
       position: relative;
       margin-bottom: 20px;
       color: #dce0eb;
-      padding: 10px 15px;
+      padding: 15px;
       border-radius: 10px;
       width: 100%;
-      color: white;
       border: none;
       background-color: transparent;
       display: flex;
@@ -78,12 +98,13 @@
       justify-content: start;
       font-size: 16px;
       svg {
-        color: white;
+        color: #63b4ec;
         width: 20px;
         height: 20px;
       }
       &:hover {
-        background-color: #172b51;
+        background-color: #172b5180;
+        //   background-color: #172b51;
       }
       .notification-count {
         color: white;
@@ -96,10 +117,11 @@
     }
 
     &__user-box {
+      position: relative;
       display: flex;
       align-items: center;
       background-color: #121830;
-      padding: 10px 20px;
+      padding: 12px;
       border-radius: 10px;
 
       .sidebar__avatar {
@@ -114,7 +136,7 @@
         color: white;
         border: none;
         margin-left: auto;
-        padding: 5px 10px;
+        padding: 8px;
         border-radius: 5px;
         cursor: pointer;
         &:hover {
@@ -122,31 +144,39 @@
         }
       }
     }
+
     .sidebar__user-info {
       display: flex;
       flex-direction: column;
       .sidebar__user-name {
         font-weight: bold;
-        color: white;
+        color: #fcfdfd;
       }
+      .sidebar__user-hashtag {
+        color: #64748b;
+      }
+    }
 
-      .sidebar__menu {
-        display: none;
-        &-list {
-          list-style: none;
-          padding: 0;
-        }
-        &-item {
-          margin-top: 5px;
-        }
-        &-link {
-          text-decoration: none;
-          color: #333;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+    .sidebar__menu {
+      position: absolute;
+      right: -220px;
+      bottom: 10px;
+      width: 224px;
+      background-color: black;
+      padding: 20px;
+      border-radius: 8px;
+      &-list {
+        list-style: none;
+        padding: 0;
+      }
+      &-item {
+        margin-top: 5px;
+      }
+      &-link {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        justify-content: space-between;
       }
     }
 
