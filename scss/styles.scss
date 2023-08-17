@@ -1,9 +1,25 @@
-// Colors
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-$primary: #9b00bc;
-$secondary: #000000;
-$tertiary: #ffffff;
+@mixin section-max-width {
+  max-width: 1400px;
+  margin-inline: auto;
+}
 
+@mixin navigation-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: medium;
+}
+
+// Font
+// $font-family: "Poppins", sans-serif;
+
+// Reset
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +27,258 @@ $tertiary: #ffffff;
 }
 
 body {
-  background-color: black;
-  height: 100vh;
+  // font-family: $font-family;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+@import "./home.scss";
+@import "./loggedInPage.scss";
+
+.home {
+  background: #000;
+  padding-bottom: 100px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .home {
-  &__heading {
-    color: $primary;
-    background: white;
+  padding-top: 50px;
+  position: relative;
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #454242;
+    height: 80vh;
+    margin-inline: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+    &__btn {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 20px;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+}
+
+.navigation {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 50px;
+
+  &__btns--left {
+    display: flex;
+    gap: 20px;
+    .get-started {
+      @include navigation-btn;
+    }
+    .showcase {
+      @include navigation-btn;
+    }
+  }
+  &__btns--right {
+    display: flex;
+    gap: 20px;
+    .join-beta {
+      @include navigation-btn;
+    }
+    .sign-in {
+      @include navigation-btn;
+    }
+  }
+}
+
+.about {
+  margin-top: 100px;
+  color: white;
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  &__icon {
+    margin-right: 10px;
+  }
+  &__header {
+    display: flex;
+    gap: 10px;
+
+    &--title {
+      font-size: larger;
+    }
+  }
+  &__body {
+    .about__paragraph {
+      margin-top: 20px;
+    }
+    .about__executives {
+      margin-top: 30px;
+      &--heading {
+        font-size: larger;
+        margin-bottom: 10px;
+      }
+      &--desc {
+        max-width: 360px;
+      }
+    }
+    .about__advisors {
+      margin-block: 30px;
+      &--heading {
+        margin-bottom: 10px;
+        font-size: larger;
+      }
+      &--list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+    .about__research-engineer {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &--title {
+        font-size: larger;
+      }
+      .employee-detail {
+        display: flex;
+        gap: 25px;
+      }
+    }
+    .about__legal-finance {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &--title {
+        font-size: larger;
+      }
+      .employee-detail {
+        display: flex;
+        gap: 50px;
+      }
+    }
+    .about__community-management {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+      &--title {
+        font-size: larger;
+      }
+      .employee-names {
+        display: flex;
+        gap: 25px;
+      }
+    }
+    .about__employee-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .employee-category {
+        font-size: larger;
+      }
+      .employee-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        .employee-description {
+          display: flex;
+          gap: 5px;
+          .employee-occupation {
+            display: inline-block;
+            width: 96px; /* You can adjust this value as needed */
+
+            /* Hide any overflow beyond the specified width */
+            overflow: hidden;
+
+            /* Apply ellipsis (...) when the content overflows */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .employee-name {
+            color: gray;
+            display: inline-block;
+            width: 100px; /* You can adjust this value as needed */
+
+            /* Hide any overflow beyond the specified width */
+            overflow: hidden;
+
+            /* Apply ellipsis (...) when the content overflows */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
+
+.careers {
+  margin-top: 100px;
+  color: white;
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  &__icon {
+    margin-right: 10px;
+  }
+  &__header {
+    display: flex;
+    gap: 10px;
+
+    &--title {
+      font-size: larger;
+    }
+  }
+  &__body {
+    .careers__paragraph {
+      margin-top: 20px;
+    }
+  }
+}
+
+.contact {
+  margin-block: 100px;
+  color: white;
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  &__icon {
+    margin-right: 10px;
+  }
+  &__header {
+    display: flex;
+    gap: 10px;
+
+    &--title {
+      font-size: larger;
+    }
+  }
+  &__body {
+    .contact__paragraph {
+      margin-top: 20px;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }
