@@ -1,1 +1,316 @@
+.home {
+  padding-bottom: 100px;
 
+  position: relative;
+  background: linear-gradient(to bottom, #061333, #060622);
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #07152f;
+    height: 75vh;
+    margin-inline: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1),
+      0 8px 10px rgba(0, 0, 0, 0.1), 0 10px 12px rgba(0, 0, 0, 0.1),
+      0 12px 14px rgba(0, 0, 0, 0.1);
+    &__btn {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 20px;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      background-color: transparent;
+      transition: all 0.3s;
+      color: white;
+      &:hover {
+        background-color: #2a3c5c;
+      }
+    }
+  }
+
+  .navigation {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 50px;
+
+    &__btns--left {
+      display: flex;
+      gap: 20px;
+      .get-started {
+        @include navigation-btn;
+        background-color: #1e0d1f;
+        color: #fff1f1;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #7c2d12;
+        }
+        svg {
+          color: #dd6516;
+        }
+      }
+      .showcase {
+        @include navigation-btn;
+        background-color: #200725;
+        color: #fff1f1;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #881337;
+        }
+        svg {
+          color: #f43f5e;
+        }
+      }
+    }
+    &__btns--right {
+      display: flex;
+      gap: 20px;
+      .join-beta {
+        @include navigation-btn;
+        color: #fff1f1;
+        background-color: #061326;
+
+        transition: all 0.3s;
+        &:hover {
+          background-color: #064e3b;
+        }
+        svg {
+          color: #10b982;
+        }
+      }
+      .sign-in {
+        @include navigation-btn;
+        color: #fff1f1;
+        background-color: #1b101e;
+
+        transition: all 0.3s;
+        &:hover {
+          background-color: #713f12;
+        }
+        svg {
+          color: #e0ab09;
+        }
+      }
+    }
+  }
+
+  .about {
+    margin-top: 100px;
+    color: #b8c1cf;
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    &__icon {
+      margin-right: 10px;
+      margin-top: 5px;
+      svg {
+        color: #13b8a7;
+      }
+    }
+    &__header {
+      display: flex;
+      gap: 10px;
+
+      &--title {
+        font-size: 30px;
+        color: #fffffe;
+      }
+    }
+    &__body {
+      .about__paragraph {
+        margin-top: 20px;
+        color: #b8c1cf;
+      }
+      .about__executives {
+        margin-top: 30px;
+        &--heading {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        &--desc {
+          max-width: 360px;
+        }
+      }
+      .about__advisors {
+        margin-block: 30px;
+        &--heading {
+          margin-bottom: 10px;
+          font-size: 24px;
+        }
+        &--list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+      }
+      .about__research-engineer {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--title {
+          font-size: 24px;
+        }
+        .employee-names {
+          display: flex;
+          gap: 30px;
+        }
+      }
+      .about__legal-finance {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--title {
+          font-size: 24px;
+        }
+        .employee-detail {
+          display: flex;
+          gap: 50px;
+        }
+      }
+      .about__community-management {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+        &--title {
+          font-size: 24px;
+        }
+        .employee-names {
+          display: flex;
+          gap: 25px;
+        }
+      }
+      .about__employee-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .employee-category {
+          font-size: 24px;
+        }
+        .employee-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          .employee-description {
+            display: flex;
+            gap: 5px;
+            .employee-occupation {
+              display: inline-block;
+              width: 96px; /* You can adjust this value as needed */
+
+              /* Hide any overflow beyond the specified width */
+              overflow: hidden;
+
+              /* Apply ellipsis (...) when the content overflows */
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            .employee-name {
+              color: gray;
+              display: inline-block;
+              width: 100px; /* You can adjust this value as needed */
+
+              /* Hide any overflow beyond the specified width */
+              overflow: hidden;
+
+              /* Apply ellipsis (...) when the content overflows */
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .careers {
+    margin-top: 100px;
+    color: white;
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    &__icon {
+      margin-right: 10px;
+      margin-top: 6px;
+      svg {
+        color: #5046e5;
+      }
+    }
+    &__header {
+      display: flex;
+      gap: 10px;
+
+      &--title {
+        font-size: 30px;
+        color: #fffffe;
+      }
+    }
+    &__body {
+      .careers__paragraph {
+        margin-top: 20px;
+        color: #b8c1cf;
+      }
+    }
+  }
+
+  .contact {
+    margin-block: 100px;
+    color: white;
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    &__icon {
+      margin-right: 10px;
+      color: #d87705;
+      margin-top: 6px;
+    }
+    &__header {
+      display: flex;
+      gap: 10px;
+
+      &--title {
+        color: #fffffe;
+        font-size: 30px;
+      }
+    }
+    &__body {
+      .contact__paragraph {
+        margin-top: 20px;
+        color: #b8c1cf;
+        a {
+          color: #5090c3;
+        }
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+    &__links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      .footer__link {
+        color: #a3abb9;
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
