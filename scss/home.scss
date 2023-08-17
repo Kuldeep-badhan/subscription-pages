@@ -3,7 +3,6 @@
 .home {
   padding-bottom: 100px;
   position: relative;
-  // background: linear-gradient(to bottom, #061333, #060622);
   background-color: #272935;
   .header__container {
     background-color: #1e2128;
@@ -24,12 +23,8 @@
           align-items: center;
           gap: 15px;
           img {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-          }
-          .company-name {
-            font-size: 30px;
+            height: 50px;
+            width: 100px;
           }
         }
         .nav-links {
@@ -53,70 +48,6 @@
         gap: 20px;
         align-items: center;
 
-        .language-selector {
-          position: relative;
-          &__btn {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            .flag {
-              display: flex;
-              align-items: center;
-              img {
-                height: 20px;
-                width: 20px;
-                border-radius: 50%;
-              }
-            }
-            &:hover {
-              cursor: pointer;
-              .country {
-                color: #aaaebe;
-              }
-              svg {
-                color: #aaaebe;
-              }
-            }
-          }
-          //   &:hover {
-          //     .languages {
-          //       display: block;
-          //     }
-          //   }
-          .languages {
-            position: absolute;
-            top: 30px;
-            width: 170px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            background-color: #17181d;
-            list-style: none;
-            padding: 10px;
-            border-radius: 10px;
-
-            &__item {
-              display: flex;
-              align-items: center;
-              padding: 5px;
-              border-radius: 5px;
-              gap: 10px;
-              transition: all 0.3s;
-              &:hover {
-                background-color: rgba(115, 110, 110, 0.1);
-                color: #aaaebe;
-              }
-              &--img {
-                height: 20px;
-                width: 20px;
-                border-radius: 50%;
-              }
-              &--country-name {
-                font-size: 14px;
-              }
-            }
-          }
-        }
         .premium__btn {
           display: flex;
           align-items: center;
@@ -129,6 +60,20 @@
           transition: all 0.3s;
           &:hover {
             background-color: rgb(255, 195, 79, 0.3);
+          }
+        }
+
+        .discord-login__btn {
+          background-color: transparent;
+          border: none;
+          color: #f1f4fb;
+          border-radius: 6px;
+          font-size: 16px;
+          padding: 12px 20px;
+          transition: all 0.3s;
+          background-color: rgb(57, 148, 255, 1);
+          &:hover {
+            background-color: rgb(57, 148, 255, 0.8);
           }
         }
       }
@@ -345,19 +290,6 @@
       }
     }
   }
-
-  .discord-login__btn {
-    background-color: transparent;
-    border: none;
-    color: #f1f4fb;
-    border-radius: 6px;
-    padding: 12px 20px;
-    transition: all 0.3s;
-    background-color: rgb(57, 148, 255, 1);
-    &:hover {
-      background-color: rgb(57, 148, 255, 0.8);
-    }
-  }
 }
 
 // hidden sections start
@@ -481,6 +413,72 @@
     color: #7b8094;
     font-size: 14px;
     font-weight: medium;
+  }
+}
+
+.language-selector {
+  position: relative;
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .flag {
+      display: flex;
+      align-items: center;
+      img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .country {
+        color: #aaaebe;
+      }
+      svg {
+        color: #aaaebe;
+      }
+    }
+  }
+  //   &:hover {
+  //     .languages {
+  //       display: block;
+  //     }
+  //   }
+
+  .languages {
+    position: absolute;
+    top: 30px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #17181d;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-radius: 5px;
+      gap: 10px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: rgba(115, 110, 110, 0.1);
+        color: #aaaebe;
+      }
+      &--img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+      &--country-name {
+        font-size: 14px;
+      }
+    }
   }
 }
 
