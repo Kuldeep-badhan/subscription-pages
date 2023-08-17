@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @mixin section-max-width {
   max-width: 1400px;
@@ -17,7 +17,7 @@
 }
 
 // Font
-// $font-family: "Poppins", sans-serif;
+$font-family: "Poppins", sans-serif;
 
 // Reset
 * {
@@ -27,7 +27,7 @@
 }
 
 body {
-  // font-family: $font-family;
+  font-family: $font-family;
   max-width: 1920px;
   margin-inline: auto;
 }
@@ -47,16 +47,22 @@ button {
 .home {
   padding-top: 50px;
   position: relative;
+  background: linear-gradient(to bottom, #061333, #060622);
   .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #454242;
-    height: 80vh;
+    background: #07152f;
+    height: 75vh;
     margin-inline: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 20px;
     position: relative;
+    color: white;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1),
+      0 8px 10px rgba(0, 0, 0, 0.1), 0 10px 12px rgba(0, 0, 0, 0.1),
+      0 12px 14px rgba(0, 0, 0, 0.1);
     &__btn {
       position: absolute;
       display: flex;
@@ -66,6 +72,12 @@ button {
       border: none;
       border-radius: 50%;
       padding: 10px;
+      background-color: transparent;
+      transition: all 0.3s;
+      color: white;
+      &:hover {
+        background-color: #2a3c5c;
+      }
     }
   }
 }
@@ -82,9 +94,19 @@ button {
     gap: 20px;
     .get-started {
       @include navigation-btn;
+      background-color: #1e0d1f;
+      color: #fff1f1;
+      svg {
+        color: #dd6516;
+      }
     }
     .showcase {
       @include navigation-btn;
+      background-color: #200725;
+      color: #fff1f1;
+      svg {
+        color: #f43f5e;
+      }
     }
   }
   &__btns--right {
@@ -92,38 +114,54 @@ button {
     gap: 20px;
     .join-beta {
       @include navigation-btn;
+      color: #fff1f1;
+      background-color: #061326;
+      svg {
+        color: #10b982;
+      }
     }
     .sign-in {
       @include navigation-btn;
+      color: #fff1f1;
+      background-color: #1b101e;
+      svg {
+        color: #e0ab09;
+      }
     }
   }
 }
 
 .about {
   margin-top: 100px;
-  color: white;
+  color: #b8c1cf;
   max-width: 900px;
   margin-inline: auto;
   display: flex;
   &__icon {
     margin-right: 10px;
+    margin-top: 5px;
+    svg {
+      color: #13b8a7;
+    }
   }
   &__header {
     display: flex;
     gap: 10px;
 
     &--title {
-      font-size: larger;
+      font-size: 30px;
+      color: #fffffe;
     }
   }
   &__body {
     .about__paragraph {
       margin-top: 20px;
+      color: #b8c1cf;
     }
     .about__executives {
       margin-top: 30px;
       &--heading {
-        font-size: larger;
+        font-size: 25px;
         margin-bottom: 10px;
       }
       &--desc {
@@ -232,6 +270,9 @@ button {
   display: flex;
   &__icon {
     margin-right: 10px;
+    svg {
+      color: #5046e5;
+    }
   }
   &__header {
     display: flex;
@@ -239,11 +280,13 @@ button {
 
     &--title {
       font-size: larger;
+      color: #fffffe;
     }
   }
   &__body {
     .careers__paragraph {
       margin-top: 20px;
+      color: #b8c1cf;
     }
   }
 }
@@ -256,18 +299,24 @@ button {
   display: flex;
   &__icon {
     margin-right: 10px;
+    color: #d87705;
   }
   &__header {
     display: flex;
     gap: 10px;
 
     &--title {
+      color: #fffffe;
       font-size: larger;
     }
   }
   &__body {
     .contact__paragraph {
       margin-top: 20px;
+      color: #b8c1cf;
+      a {
+        color: #5090c3;
+      }
     }
   }
 }
@@ -280,5 +329,9 @@ button {
     display: flex;
     justify-content: center;
     gap: 20px;
+    .footer__link {
+      color: #a3abb9;
+      text-decoration: none;
+    }
   }
 }
