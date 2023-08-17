@@ -4,6 +4,9 @@
   display: flex;
   gap: 10px;
   .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #080a16;
     height: 100vh;
     &__top {
@@ -30,7 +33,7 @@
         width: 100%;
       }
 
-      &-link {
+      hr &-link {
         text-decoration: none;
         color: #dce0eb;
         padding: 10px 15px;
@@ -55,24 +58,49 @@
     &__bottom {
       display: flex;
       flex-direction: column;
-      align-items: center;
       padding: 20px;
-      border-top: 1px solid #ccc;
       margin-top: auto;
     }
 
     &__notification-btn {
+      position: relative;
       margin-bottom: 20px;
-      background-color: #007bff;
+      color: #dce0eb;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: 100%;
       color: white;
       border: none;
-      padding: 10px 20px;
-      cursor: pointer;
+      background-color: transparent;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: start;
+      font-size: 16px;
+      svg {
+        color: white;
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        background-color: #172b51;
+      }
+      .notification-count {
+        color: white;
+        background-color: #64748b;
+        padding: 2px 6px;
+        border-radius: 50%;
+        position: absolute;
+        right: 5%;
+      }
     }
 
     &__user-box {
       display: flex;
       align-items: center;
+      background-color: #121830;
+      padding: 10px 20px;
+      border-radius: 10px;
 
       .sidebar__avatar {
         width: 40px;
@@ -80,22 +108,26 @@
         border-radius: 50%;
         margin-right: 10px;
       }
+      .sidebar__menu-toggle-btn {
+        margin-top: 5px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        margin-left: auto;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(59, 130, 246, 0.2);
+        }
+      }
     }
     .sidebar__user-info {
       display: flex;
       flex-direction: column;
-
       .sidebar__user-name {
         font-weight: bold;
-      }
-
-      .sidebar__menu-toggle-btn {
-        margin-top: 5px;
-        background-color: #007bff;
         color: white;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
       }
 
       .sidebar__menu {
