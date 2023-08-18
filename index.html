@@ -1,705 +1,737 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <title>Oddits</title>
-  </head>
-  <body>
-    <div class="home">
-      <section class="hero">
-        <h1 class="hero__title">Title</h1>
-        <button title="next section scroller" class="hero__btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            aria-hidden="true"
-            height="20"
-            class="inline text-slate-100"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-            ></path>
-          </svg>
-        </button>
-      </section>
-      <section class="navigation">
-        <div class="navigation__btns--left">
-          <button class="get-started">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              aria-hidden="true"
-              height="20"
-              class="inline text-orange-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-              ></path>
-            </svg>
-            Get Started
-          </button>
-          <button class="showcase">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              aria-hidden="true"
-              height="20"
-              class="inline text-rose-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              ></path>
-            </svg>
-            Showcase
-          </button>
-        </div>
-        <div class="navigation__btns--right">
-          <button class="join-beta">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              aria-hidden="true"
-              height="20"
-              class="inline text-emerald-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
-              ></path>
-            </svg>
-            Join the Beta
-          </button>
-          <button class="sign-in">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              aria-hidden="true"
-              height="20"
-              class="inline text-yellow-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-              ></path>
-            </svg>
-            Sign In
-          </button>
-        </div>
-      </section>
-      <header class="header__container">
-        <div class="header">
-          <div class="header-left">
-            <a href="#" class="logo-name">
-              <img src="/img/logo.png" alt="Logo" />
-            </a>
-            <div class="nav-links">
-              <a href="#" class="nav-link">
-                <span> Plugins </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 transform -scale-100 ltr:ml-2 rtl:mr-2 transition-all"
-                >
-                  <path
-                    d="M7 14.5l5-5 5 5"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </a>
-              <a href="#" class="nav-link">
-                <span> Resourses </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 transform -scale-100 ltr:ml-2 rtl:mr-2 transition-all"
-                >
-                  <path
-                    d="M7 14.5l5-5 5 5"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="header-right">
-            <a href="#premium-link" class="premium__btn">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#prefix__clip0)">
-                  <path
-                    d="M13.174 17.44h-1.349v.003h1.349v-.003z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M13.174 17.44h-1.349v.003h1.349v-.003z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M12.144 6.184a.317.317 0 00-.056-.074l-.019-.015a.44.44 0 00-.059-.037h-.016l-.072-.021a.332.332 0 00-.088 0v4.47l1.137-2.774-.827-1.549z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    d="M11.826 18.91v-1.186H4.154a1.62 1.62 0 00-1.135.462c-.301.296-.47.697-.47 1.116v.131c0 .418.169.82.47 1.116.301.295.71.462 1.135.462h6.858l.803-1.986.01-.115z"
-                    fill="#FFE570"
-                  ></path>
-                  <path
-                    d="M21.977 19.088a.42.42 0 000-.052c-.009-.06-.022-.12-.04-.179v-.018a1.463 1.463 0 00-.072-.19l-.016-.034a1.655 1.655 0 00-.094-.165 1.616 1.616 0 00-.283-.321 1.673 1.673 0 00-.375-.24l-.155-.06-.153-.042h-.016l-.13-.021-1.339 3.26h1.121a1.58 1.58 0 001.012-.357c.079-.065.152-.137.22-.213a1.601 1.601 0 00.352-.818V19.302a1.346 1.346 0 00-.032-.213zM16.548 17.724L15.205 21h1.857l1.343-3.276h-1.857z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    d="M11.012 21h.813v-1.985L11.012 21z"
-                    fill="#FFE570"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M11.012 21h.813v-1.985L11.012 21z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M11.825 19.015l.53-1.291h-.53v1.291zM20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M18.763 8.784c-.789-1.717-.647-1.577-2.394-2.366 1.747-.773 1.605-.634 2.394-2.353.787 1.72.645 1.577 2.395 2.366-1.75.776-1.608.64-2.395 2.353zM22.224 6.492c-.587-1.276-.482-1.17-1.777-1.746 1.295-.576 1.19-.47 1.777-1.746.583 1.275.478 1.17 1.776 1.746-1.298.576-1.193.47-1.776 1.746z"
-                    fill="#C8D4FF"
-                  ></path>
-                  <path
-                    d="M20.968 17.443H3.578a.281.281 0 00-.283.278v.003c0 .154.127.279.284.279h17.39a.281.281 0 00.283-.28v-.002a.281.281 0 00-.284-.278z"
-                    fill="#D0A500"
-                  ></path>
-                  <path
-                    d="M11.825 6.024a.308.308 0 00-.22.155l-3.7 7.075a.296.296 0 01-.22.157.305.305 0 01-.259-.083l-4.91-4.822a.304.304 0 00-.474.063.293.293 0 00-.04.173l1.496 8.7h5.48l2.847-6.94V6.023z"
-                    fill="#FFE570"
-                  ></path>
-                  <path
-                    d="M16.297 13.333a.308.308 0 01-.474-.082l-.522-1.001-2.14 5.19h1.806l1.902-4.636-.572.529zM22.303 8.077a.297.297 0 00-.267.074l-1.648 1.488-3.211 7.801h3.917l1.448-9.029a.29.29 0 00-.051-.214.3.3 0 00-.188-.12z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    d="M11.825 10.501L8.98 17.443h2.847V10.5z"
-                    fill="#FFE570"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M11.825 10.501L8.98 17.443h2.847V10.5z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z"
-                    fill="#FFCB39"
-                  ></path>
-                  <path
-                    opacity="0.3"
-                    d="M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z"
-                    fill="#fff"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="prefix__clip0">
-                    <path
-                      fill="#fff"
-                      transform="translate(2 3)"
-                      d="M0 0h22v18H0z"
-                    ></path>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span> Premium </span>
-            </a>
-            <button class="discord-login__btn">Login with Discord</button>
-          </div>
-        </div>
-      </header>
-      <section class="about">
-        <div class="about__icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            aria-hidden="true"
-            height="32"
-            class="right-full mr-2 text-teal-500 md:absolute"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-        </div>
-        <div>
-          <div class="about__header">
-            <div class="about__header--title">About</div>
-          </div>
-          <div class="about__body">
-            <p class="about__paragraph">
-              It is an independent research lab exploring new mediums of thought
-              and expanding the imaginative powers of the human species.
-            </p>
-            <p class="about__paragraph">
-              We are a small self-funded team focused on design, human
-              infrastructure, and AI. We have 11 full-time staff and an
-              incredible set of advisors.
-            </p>
-            <div class="about__executives">
-              <h4 class="about__executives--heading">Executives</h4>
-              <h3 class="about__executives--name">David Holz</h3>
-              <p class="about__executives--desc">
-                Previously: Founder Leap Motion, Researcher at NASA, Max Planck
-              </p>
-              <p></p>
-            </div>
-            <div class="about__advisors">
-              <h4 class="about__advisors--heading">Advisors</h4>
-              <div class="about__advisors--list">
-                <div>
-                  <h3 class="about__advisors--name">Jim Keller</h3>
-                  <p class="about__advisors--desc">
-                    Lead Silicon at Apple, AMD, Tesla, Intel, Coauthor X86-64,
-                    CTO Tenstorrent
-                  </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/home.css" />
+        <title>Oddits</title>
+    </head>
+    <body>
+        <div class="home">
+            <section class="hero">
+                <h1 class="hero__title">Title</h1>
+                <button title="next section scroller" class="hero__btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        height="20"
+                        class="inline text-slate-100"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                        ></path>
+                    </svg>
+                </button>
+            </section>
+            <section class="navigation">
+                <div class="navigation__btns--left">
+                    <button class="get-started">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="20"
+                            class="inline text-orange-500"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                            ></path>
+                        </svg>
+                        Get Started
+                    </button>
+                    <button class="showcase">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="20"
+                            class="inline text-rose-500"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            ></path>
+                        </svg>
+                        Showcase
+                    </button>
+                </div>
+                <div class="navigation__btns--right">
+                    <button class="join-beta">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="20"
+                            class="inline text-emerald-500"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                            ></path>
+                        </svg>
+                        Join the Beta
+                    </button>
+                    <button class="sign-in">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="20"
+                            class="inline text-yellow-500"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                            ></path>
+                        </svg>
+                        Sign In
+                    </button>
+                </div>
+            </section>
+            <header class="header__container">
+                <div class="header">
+                    <div class="header-left">
+                        <a href="#" class="logo-name">
+                            <img src="/img/logo.png" alt="Logo" />
+                        </a>
+                        <div class="nav-links">
+                            <a href="#" class="nav-link">
+                                <span> Plugins </span>
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 transform -scale-100 ltr:ml-2 rtl:mr-2 transition-all"
+                                >
+                                    <path
+                                        d="M7 14.5l5-5 5 5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <span> Resourses </span>
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 transform -scale-100 ltr:ml-2 rtl:mr-2 transition-all"
+                                >
+                                    <path
+                                        d="M7 14.5l5-5 5 5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <a href="#premium-link" class="premium__btn">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#prefix__clip0)">
+                                    <path
+                                        d="M13.174 17.44h-1.349v.003h1.349v-.003z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M13.174 17.44h-1.349v.003h1.349v-.003z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M12.144 6.184a.317.317 0 00-.056-.074l-.019-.015a.44.44 0 00-.059-.037h-.016l-.072-.021a.332.332 0 00-.088 0v4.47l1.137-2.774-.827-1.549z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        d="M11.826 18.91v-1.186H4.154a1.62 1.62 0 00-1.135.462c-.301.296-.47.697-.47 1.116v.131c0 .418.169.82.47 1.116.301.295.71.462 1.135.462h6.858l.803-1.986.01-.115z"
+                                        fill="#FFE570"
+                                    ></path>
+                                    <path
+                                        d="M21.977 19.088a.42.42 0 000-.052c-.009-.06-.022-.12-.04-.179v-.018a1.463 1.463 0 00-.072-.19l-.016-.034a1.655 1.655 0 00-.094-.165 1.616 1.616 0 00-.283-.321 1.673 1.673 0 00-.375-.24l-.155-.06-.153-.042h-.016l-.13-.021-1.339 3.26h1.121a1.58 1.58 0 001.012-.357c.079-.065.152-.137.22-.213a1.601 1.601 0 00.352-.818V19.302a1.346 1.346 0 00-.032-.213zM16.548 17.724L15.205 21h1.857l1.343-3.276h-1.857z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        d="M11.012 21h.813v-1.985L11.012 21z"
+                                        fill="#FFE570"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M11.012 21h.813v-1.985L11.012 21z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M11.825 19.015l.53-1.291h-.53v1.291zM20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M18.763 8.784c-.789-1.717-.647-1.577-2.394-2.366 1.747-.773 1.605-.634 2.394-2.353.787 1.72.645 1.577 2.395 2.366-1.75.776-1.608.64-2.395 2.353zM22.224 6.492c-.587-1.276-.482-1.17-1.777-1.746 1.295-.576 1.19-.47 1.777-1.746.583 1.275.478 1.17 1.776 1.746-1.298.576-1.193.47-1.776 1.746z"
+                                        fill="#C8D4FF"
+                                    ></path>
+                                    <path
+                                        d="M20.968 17.443H3.578a.281.281 0 00-.283.278v.003c0 .154.127.279.284.279h17.39a.281.281 0 00.283-.28v-.002a.281.281 0 00-.284-.278z"
+                                        fill="#D0A500"
+                                    ></path>
+                                    <path
+                                        d="M11.825 6.024a.308.308 0 00-.22.155l-3.7 7.075a.296.296 0 01-.22.157.305.305 0 01-.259-.083l-4.91-4.822a.304.304 0 00-.474.063.293.293 0 00-.04.173l1.496 8.7h5.48l2.847-6.94V6.023z"
+                                        fill="#FFE570"
+                                    ></path>
+                                    <path
+                                        d="M16.297 13.333a.308.308 0 01-.474-.082l-.522-1.001-2.14 5.19h1.806l1.902-4.636-.572.529zM22.303 8.077a.297.297 0 00-.267.074l-1.648 1.488-3.211 7.801h3.917l1.448-9.029a.29.29 0 00-.051-.214.3.3 0 00-.188-.12z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        d="M11.825 10.501L8.98 17.443h2.847V10.5z"
+                                        fill="#FFE570"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M11.825 10.501L8.98 17.443h2.847V10.5z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z"
+                                        fill="#fff"
+                                    ></path>
+                                    <path
+                                        d="M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z"
+                                        fill="#FFCB39"
+                                    ></path>
+                                    <path
+                                        opacity="0.3"
+                                        d="M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z"
+                                        fill="#fff"
+                                    ></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="prefix__clip0">
+                                        <path
+                                            fill="#fff"
+                                            transform="translate(2 3)"
+                                            d="M0 0h22v18H0z"
+                                        ></path>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span> Premium </span>
+                        </a>
+                        <button class="discord-login__btn">
+                            Login with Discord
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <section class="about">
+                <div class="about__icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        height="32"
+                        class="right-full mr-2 text-teal-500 md:absolute"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
                 </div>
                 <div>
-                  <h3 class="about__advisors--name">Jim Keller</h3>
-                  <p class="about__advisors--desc">
-                    Lead Silicon at Apple, AMD, Tesla, Intel, Coauthor X86-64,
-                    CTO Tenstorrent
-                  </p>
-                </div>
-                <div>
-                  <h3 class="about__advisors--name">Jim Keller</h3>
-                  <p class="about__advisors--desc">
-                    Lead Silicon at Apple, AMD, Tesla, Intel, Coauthor X86-64,
-                    CTO Tenstorrent
-                  </p>
-                </div>
-                <div>
-                  <h3 class="about__advisors--name">Jim Keller</h3>
-                  <p class="about__advisors--desc">
-                    Lead Silicon at Apple, AMD, Tesla, Intel, Coauthor X86-64,
-                    CTO Tenstorrent
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="about__research-engineer">
-              <h3 class="about__research-engineer--title">
-                Research and Engineering
-              </h3>
-              <div class="employee-names">
-                <span class="employee-name">Daniel</span>
-                <span class="employee-name">Max</span>
-                <span class="employee-name">Jack</span>
-                <span class="employee-name">Thomas</span>
-                <span class="employee-name">Red</span>
-                <span class="employee-name">Sam</span>
-                <span class="employee-name">Nadir</span>
-                <span class="employee-name">Sebastian</span>
-              </div>
-            </div>
-            <div class="about__legal-finance">
-              <h3 class="about__legal-finance--title">Legal and Finance</h3>
-              <div class="employee-detail">
-                <div class="employee-desc">
-                  <h3 class="employee-name">Daniel</h3>
+                    <div class="about__header">
+                        <div class="about__header--title">About</div>
+                    </div>
+                    <div class="about__body">
+                        <p class="about__paragraph">
+                            It is an independent research lab exploring new
+                            mediums of thought and expanding the imaginative
+                            powers of the human species.
+                        </p>
+                        <p class="about__paragraph">
+                            We are a small self-funded team focused on design,
+                            human infrastructure, and AI. We have 11 full-time
+                            staff and an incredible set of advisors.
+                        </p>
+                        <div class="about__executives">
+                            <h4 class="about__executives--heading">
+                                Executives
+                            </h4>
+                            <h3 class="about__executives--name">David Holz</h3>
+                            <p class="about__executives--desc">
+                                Previously: Founder Leap Motion, Researcher at
+                                NASA, Max Planck
+                            </p>
+                            <p></p>
+                        </div>
+                        <div class="about__advisors">
+                            <h4 class="about__advisors--heading">Advisors</h4>
+                            <div class="about__advisors--list">
+                                <div>
+                                    <h3 class="about__advisors--name">
+                                        Jim Keller
+                                    </h3>
+                                    <p class="about__advisors--desc">
+                                        Lead Silicon at Apple, AMD, Tesla,
+                                        Intel, Coauthor X86-64, CTO Tenstorrent
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="about__advisors--name">
+                                        Jim Keller
+                                    </h3>
+                                    <p class="about__advisors--desc">
+                                        Lead Silicon at Apple, AMD, Tesla,
+                                        Intel, Coauthor X86-64, CTO Tenstorrent
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="about__advisors--name">
+                                        Jim Keller
+                                    </h3>
+                                    <p class="about__advisors--desc">
+                                        Lead Silicon at Apple, AMD, Tesla,
+                                        Intel, Coauthor X86-64, CTO Tenstorrent
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="about__advisors--name">
+                                        Jim Keller
+                                    </h3>
+                                    <p class="about__advisors--desc">
+                                        Lead Silicon at Apple, AMD, Tesla,
+                                        Intel, Coauthor X86-64, CTO Tenstorrent
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__research-engineer">
+                            <h3 class="about__research-engineer--title">
+                                Research and Engineering
+                            </h3>
+                            <div class="employee-names">
+                                <span class="employee-name">Daniel</span>
+                                <span class="employee-name">Max</span>
+                                <span class="employee-name">Jack</span>
+                                <span class="employee-name">Thomas</span>
+                                <span class="employee-name">Red</span>
+                                <span class="employee-name">Sam</span>
+                                <span class="employee-name">Nadir</span>
+                                <span class="employee-name">Sebastian</span>
+                            </div>
+                        </div>
+                        <div class="about__legal-finance">
+                            <h3 class="about__legal-finance--title">
+                                Legal and Finance
+                            </h3>
+                            <div class="employee-detail">
+                                <div class="employee-desc">
+                                    <h3 class="employee-name">Daniel</h3>
 
-                  <div class="employee-post">legal advisor</div>
+                                    <div class="employee-post">
+                                        legal advisor
+                                    </div>
+                                </div>
+                                <div class="employee-desc">
+                                    <h3 class="employee-name">Nadia Ali</h3>
+                                    <!-- <div class="employee-post">legal advisor</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__community-management">
+                            <h3 class="about__community-management--title">
+                                Community Management
+                            </h3>
+                            <div class="employee-names">
+                                <span class="employee-name"
+                                    >fnuckle (Katryna)</span
+                                >
+                                <span class="employee-name">Ancient Chaos</span>
+                            </div>
+                        </div>
+                        <div class="about__employee-container">
+                            <h3 class="employee-category">
+                                Discord Moderators and Guides
+                            </h3>
+                            <div class="employee-grid">
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Afterburner</span
+                                    >
+                                    <span class="employee-name">AmirKerr</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >bartek</span
+                                    >
+                                    <span class="employee-name">Blue Man</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >ChrisViau</span
+                                    >
+                                    <span class="employee-name">cody boy</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >croakie</span
+                                    >
+                                    <span class="employee-name">dezm0n</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >DigitalDragon</span
+                                    >
+                                    <span class="employee-name">Eikyuu</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Feonix</span
+                                    >
+                                    <span class="employee-name">fractl</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >isaacq</span
+                                    >
+                                    <span class="employee-name">jayscott</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >kav2k</span
+                                    >
+                                    <span class="employee-name"
+                                        >MatthewHaggett</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Meggirbot</span
+                                    >
+                                    <span class="employee-name">Reiko</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Sanne (Ms. Unicorn)</span
+                                    >
+                                    <span class="employee-name">schofe</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Shade</span
+                                    >
+                                    <span class="employee-name">Sirkut</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Spookydan</span
+                                    >
+                                    <span class="employee-name">SquireZed</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >starshadowx2</span
+                                    >
+                                    <span class="employee-name">Tallath</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Xaphedo</span
+                                    >
+                                    <span class="employee-name">ajmars</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >ameades</span
+                                    >
+                                    <span class="employee-name">Apricus</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >bonnie bear</span
+                                    >
+                                    <span class="employee-name">clarinet</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >classpectanon</span
+                                    >
+                                    <span class="employee-name"
+                                        >dafyomilimerick</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation">Dee</span>
+                                    <span class="employee-name">dudu</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation">eku</span>
+                                    <span class="employee-name"
+                                        >Eojin’s Reviews</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >fab1an</span
+                                    >
+                                    <span class="employee-name">fl4min_xX</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >firefly</span
+                                    >
+                                    <span class="employee-name"
+                                        >gigglethumps</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Goofball</span
+                                    >
+                                    <span class="employee-name">Historian</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Hoxxonia</span
+                                    >
+                                    <span class="employee-name">Ippity</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >jrdsctt</span
+                                    >
+                                    <span class="employee-name">Kath</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Kevazy</span
+                                    >
+                                    <span class="employee-name"
+                                        >Kinky Kong</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Krakput</span
+                                    >
+                                    <span class="employee-name">Kyun</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Larc</span
+                                    >
+                                    <span class="employee-name">Marigold</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Molang</span
+                                    >
+                                    <span class="employee-name"
+                                        >noodlecake</span
+                                    >
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >PtitCitron</span
+                                    >
+                                    <span class="employee-name">Replicant</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation">Roc</span>
+                                    <span class="employee-name">ShaneMcG</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Soar</span
+                                    >
+                                    <span class="employee-name">STON3ZY</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >SunshineyDay</span
+                                    >
+                                    <span class="employee-name">TaylorV</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >theo3</span
+                                    >
+                                    <span class="employee-name">Trent</span>
+                                </div>
+                                <div class="employee-description">
+                                    <span class="employee-occupation"
+                                        >Weaving Light</span
+                                    >
+                                    <span class="employee-name">Zu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="employee-desc">
-                  <h3 class="employee-name">Nadia Ali</h3>
-                  <!-- <div class="employee-post">legal advisor</div> -->
+            </section>
+            <section class="careers">
+                <div class="careers__icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        height="32"
+                        class="right-full mr-2 text-indigo-600 md:absolute"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        ></path>
+                    </svg>
                 </div>
-              </div>
-            </div>
-            <div class="about__community-management">
-              <h3 class="about__community-management--title">
-                Community Management
-              </h3>
-              <div class="employee-names">
-                <span class="employee-name">fnuckle (Katryna)</span>
-                <span class="employee-name">Ancient Chaos</span>
-              </div>
-            </div>
-            <div class="about__employee-container">
-              <h3 class="employee-category">Discord Moderators and Guides</h3>
-              <div class="employee-grid">
-                <div class="employee-description">
-                  <span class="employee-occupation">Afterburner</span>
-                  <span class="employee-name">AmirKerr</span>
+                <div class="careers__content">
+                    <div class="careers__header">
+                        <div class="careers__header--title">Careers</div>
+                    </div>
+                    <div class="careers__body">
+                        <p class="careers__paragraph">
+                            We're a small, self-funded, fully-distributed team
+                            and we're actively hiring!
+                        </p>
+                        <p class="careers__paragraph">
+                            Come help us scale, explore, and build humanist
+                            infrastructure focused on amplifying the human mind
+                            and spirit.
+                        </p>
+                        <p class="careers__paragraph">
+                            If you're sure you can help, but don't see a
+                            position that fits, email us.
+                        </p>
+                        <p class="careers__paragraph">
+                            We look forward to hearing from you.
+                        </p>
+                    </div>
                 </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">bartek</span>
-                  <span class="employee-name">Blue Man</span>
+            </section>
+            <section class="contact">
+                <div class="contact__icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        height="32"
+                        class="right-full mr-2 text-amber-600 md:absolute"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        ></path>
+                    </svg>
                 </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">ChrisViau</span>
-                  <span class="employee-name">cody boy</span>
+                <div class="contact__body">
+                    <div class="contact__header">
+                        <div class="contact__header--title">Contact</div>
+                    </div>
+                    <div class="contact__body">
+                        <p class="contact__paragraph">
+                            For product support or questions please
+                            <a href="#">join our Discord</a> and ask questions
+                            in our #support chatrooms.
+                        </p>
+                        <p class="contact__paragraph">
+                            For billing support:
+                            <a
+                                href="mailto:billing@domain.com"
+                                class="contact__email"
+                                >billing@domain.com</a
+                            >
+                        </p>
+                        <p class="contact__paragraph">
+                            For journalist inquiries:
+                            <a
+                                href="mailto:press@domain.com"
+                                class="contact__email"
+                                >press@domain.com</a
+                            >
+                        </p>
+                    </div>
                 </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">croakie</span>
-                  <span class="employee-name">dezm0n</span>
+            </section>
+            <footer class="footer">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Terms of Service</a>
+                    <a href="#" class="footer__link">Privacy Policy</a>
                 </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">DigitalDragon</span>
-                  <span class="employee-name">Eikyuu</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Feonix</span>
-                  <span class="employee-name">fractl</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">isaacq</span>
-                  <span class="employee-name">jayscott</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">kav2k</span>
-                  <span class="employee-name">MatthewHaggett</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Meggirbot</span>
-                  <span class="employee-name">Reiko</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Sanne (Ms. Unicorn)</span>
-                  <span class="employee-name">schofe</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Shade</span>
-                  <span class="employee-name">Sirkut</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Spookydan</span>
-                  <span class="employee-name">SquireZed</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">starshadowx2</span>
-                  <span class="employee-name">Tallath</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Xaphedo</span>
-                  <span class="employee-name">ajmars</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">ameades</span>
-                  <span class="employee-name">Apricus</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">bonnie bear</span>
-                  <span class="employee-name">clarinet</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">classpectanon</span>
-                  <span class="employee-name">dafyomilimerick</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Dee</span>
-                  <span class="employee-name">dudu</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">eku</span>
-                  <span class="employee-name">Eojin’s Reviews</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">fab1an</span>
-                  <span class="employee-name">fl4min_xX</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">firefly</span>
-                  <span class="employee-name">gigglethumps</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Goofball</span>
-                  <span class="employee-name">Historian</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Hoxxonia</span>
-                  <span class="employee-name">Ippity</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">jrdsctt</span>
-                  <span class="employee-name">Kath</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Kevazy</span>
-                  <span class="employee-name">Kinky Kong</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Krakput</span>
-                  <span class="employee-name">Kyun</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Larc</span>
-                  <span class="employee-name">Marigold</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Molang</span>
-                  <span class="employee-name">noodlecake</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">PtitCitron</span>
-                  <span class="employee-name">Replicant</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Roc</span>
-                  <span class="employee-name">ShaneMcG</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Soar</span>
-                  <span class="employee-name">STON3ZY</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">SunshineyDay</span>
-                  <span class="employee-name">TaylorV</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">theo3</span>
-                  <span class="employee-name">Trent</span>
-                </div>
-                <div class="employee-description">
-                  <span class="employee-occupation">Weaving Light</span>
-                  <span class="employee-name">Zu</span>
-                </div>
-              </div>
-            </div>
-          </div>
+            </footer>
         </div>
-      </section>
-      <section class="careers">
-        <div class="careers__icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            aria-hidden="true"
-            height="32"
-            class="right-full mr-2 text-indigo-600 md:absolute"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-            ></path>
-          </svg>
-        </div>
-        <div class="careers__content">
-          <div class="careers__header">
-            <div class="careers__header--title">Careers</div>
-          </div>
-          <div class="careers__body">
-            <p class="careers__paragraph">
-              We're a small, self-funded, fully-distributed team and we're
-              actively hiring!
-            </p>
-            <p class="careers__paragraph">
-              Come help us scale, explore, and build humanist infrastructure
-              focused on amplifying the human mind and spirit.
-            </p>
-            <p class="careers__paragraph">
-              If you're sure you can help, but don't see a position that fits,
-              email us.
-            </p>
-            <p class="careers__paragraph">
-              We look forward to hearing from you.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="contact__icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            aria-hidden="true"
-            height="32"
-            class="right-full mr-2 text-amber-600 md:absolute"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            ></path>
-          </svg>
-        </div>
-        <div class="contact__body">
-          <div class="contact__header">
-            <div class="contact__header--title">Contact</div>
-          </div>
-          <div class="contact__body">
-            <p class="contact__paragraph">
-              For product support or questions please
-              <a href="#">join our Discord</a> and ask questions in our #support
-              chatrooms.
-            </p>
-            <p class="contact__paragraph">
-              For billing support:
-              <a href="mailto:billing@domain.com" class="contact__email"
-                >billing@domain.com</a
-              >
-            </p>
-            <p class="contact__paragraph">
-              For journalist inquiries:
-              <a href="mailto:press@domain.com" class="contact__email"
-                >press@domain.com</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer__links">
-          <a href="#" class="footer__link">Terms of Service</a>
-          <a href="#" class="footer__link">Privacy Policy</a>
-        </div>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
-
-<!--  Removed Sections -->
-
-<!-- <div class="language-selector">
-  <div class="language-selector__btn">
-    <div class="flag">
-      <img src="/img/england-flag.png" alt="Country Flag" />
-    </div>
-    <span class="country"> EN </span>
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-5 text-dark-300 group-hover:text-dark-200 transition-all duration-200"
-    >
-      <path
-        d="M17 9.5l-5 5-5-5"
-        stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-    </svg>
-  </div>
-  <ul class="languages">
-    <li class="languages__item">
-      <img
-        src="/img/england-flag.png"
-        alt="country flag"
-        class="languages__item--img"
-      />
-      <span class="languages__item--country-name">England</span>
-    </li>
-    <li class="languages__item">
-      <img
-        src="/img/england-flag.png"
-        alt="country flag"
-        class="languages__item--img"
-      />
-      <span class="languages__item--country-name">England</span>
-    </li>
-    <li class="languages__item">
-      <img
-        src="/img/england-flag.png"
-        alt="country flag"
-        class="languages__item--img"
-      />
-      <span class="languages__item--country-name">England</span>
-    </li>
-    <li class="languages__item">
-      <img
-        src="/img/england-flag.png"
-        alt="country flag"
-        class="languages__item--img"
-      />
-      <span class="languages__item--country-name">England</span>
-    </li>
-    <li class="languages__item">
-      <img
-        src="/img/england-flag.png"
-        alt="country flag"
-        class="languages__item--img"
-      />
-      <span class="languages__item--country-name">England</span>
-    </li>
-  </ul>
-</div> -->

@@ -1,0 +1,202 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1920px;
+    margin-inline: auto;
+}
+button {
+    cursor: pointer;
+}
+.billing .sidebar {
+    position: sticky;
+    top: 0;
+    flex: 0.18;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #080a16;
+    height: 100vh;
+}
+.billing .sidebar__top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px 20px;
+}
+.billing .sidebar__logo {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: #dce0eb;
+}
+.billing .sidebar__nav {
+    width: 100%;
+}
+.billing .sidebar__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.billing .sidebar__nav-link {
+    text-decoration: none;
+    color: #dce0eb;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+}
+.billing .sidebar__nav-link--text {
+    font-size: 15px;
+}
+.billing .sidebar__nav-link svg {
+    color: #8aa7e1;
+    width: 20px;
+    height: 20px;
+}
+.billing .sidebar__nav-link .sidebar__icon--light {
+    display: flex;
+    align-items: center;
+}
+.billing .sidebar__nav-link .sidebar__icon--light svg {
+    color: #5a7dc1;
+}
+.billing .sidebar__nav-link--small {
+    font-size: 14px;
+}
+.billing .sidebar__nav-link:hover {
+    background-color: rgba(23, 43, 81, 0.5019607843);
+}
+.billing .sidebar hr {
+    margin-block: 15px;
+    color: #131929;
+}
+.billing .sidebar__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: auto;
+    gap: 12px;
+}
+.billing .sidebar__notification-btn {
+    position: relative;
+    color: #dce0eb;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+    font-size: 16px;
+}
+.billing .sidebar__notification-btn svg {
+    color: #63b4ec;
+    width: 20px;
+    height: 20px;
+}
+.billing .sidebar__notification-btn:hover {
+    background-color: rgba(23, 43, 81, 0.5019607843);
+}
+.billing .sidebar__notification-btn .notification-count {
+    color: #fff;
+    background-color: #64748b;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+}
+.billing .sidebar__user-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #121830;
+    padding: 12px;
+    border-radius: 10px;
+}
+.billing .sidebar__user-box .sidebar__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.billing .sidebar__user-box .sidebar__menu-toggle-btn {
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    margin-left: auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.billing .sidebar__user-box .sidebar__menu-toggle-btn:focus {
+    outline: 2px solid #4298e1;
+    background-color: rgba(59, 130, 246, 0.2);
+}
+.billing .sidebar__user-box .sidebar__menu-toggle-btn:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+.billing .sidebar .sidebar__user-info {
+    display: flex;
+    flex-direction: column;
+}
+.billing .sidebar .sidebar__user-info .sidebar__user-name {
+    font-weight: bold;
+    color: #fcfdfd;
+}
+.billing .sidebar .sidebar__user-info .sidebar__user-hashtag {
+    color: #64748b;
+}
+.billing .sidebar .sidebar__menu {
+    display: none;
+    position: absolute;
+    right: -220px;
+    bottom: 10px;
+    width: 224px;
+    background-color: #0f121c;
+    padding: 4px;
+    border-radius: 8px;
+}
+.billing .sidebar .sidebar__menu-list {
+    list-style: none;
+    padding: 0;
+}
+.billing .sidebar .sidebar__menu-item {
+    margin-top: 5px;
+}
+.billing .sidebar .sidebar__menu-link {
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.billing .sidebar .sidebar__menu-link svg {
+    height: 20px;
+    width: 20px;
+}
+.billing .sidebar .sidebar__menu-link:hover {
+    background-color: rgba(203, 213, 225, 0.4);
+}
+.billing .sidebar .sidebar__menu-link--sign-out:hover {
+    background-color: #dc2626;
+}
+.billing .sidebar__user-box.open .sidebar__menu {
+    display: block;
+}
