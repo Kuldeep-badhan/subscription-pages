@@ -12,6 +12,7 @@
         <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
 
         <link rel="stylesheet" href="/css/billing.css" />
+        <link rel="stylesheet" href="/css/sidebar.css" />
         <title>Oddits</title>
     </head>
     <body>
@@ -71,7 +72,8 @@
                                 </a>
                             </li>
                         </ul>
-                        <hr />
+                        <div class="line"></div>
+
                         <ul class="sidebar__nav-list">
                             <li class="sidebar__nav-item">
                                 <a href="#" class="sidebar__nav-link">
@@ -344,10 +346,14 @@
                         Choose the plan that works for you.
                     </p>
                     <div class="billing__time-toggle">
-                        <span class="billing__yearly">Yearly Billing</span>
-                        <span class="billing__monthly">Monthly Billing</span>
+                        <span class="billing__yearly billing__selector"
+                            >Yearly Billing</span
+                        >
+                        <span class="billing__monthly billing__selector active"
+                            >Monthly Billing</span
+                        >
                     </div>
-                    <div class="billing__cards">
+                    <div class="billing__cards billing__cards--monthly">
                         <div class="billing__plan">
                             <div class="billing__plan--upper">
                                 <div
@@ -370,8 +376,10 @@
                                 <button class="billing__plan--subscribe-btn">
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
-                                    <span>
+                                <span
+                                    class="billing__plan--offer billing__plan--offer-yearly"
+                                >
+                                    <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -520,7 +528,7 @@
                                     Subscribe
                                 </button>
                                 <span class="billing__plan--offer">
-                                    <span>
+                                    <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -669,7 +677,7 @@
                                     Subscribe
                                 </button>
                                 <span class="billing__plan--offer">
-                                    <span>
+                                    <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -818,9 +826,610 @@
                                     Subscribe
                                 </button>
                                 <span class="billing__plan--offer">
-                                    <span>
+                                    <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        height="12"
+                                        class="opacity-80"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="billing__plan--lower">
+                                <ul class="billing__plan--details">
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Limited generations (~200 /
+                                            month)</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >General commercial terms</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Access to member gallery</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Optional credit top ups</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >3 concurrent fast jobs</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing__cards billing__cards--yearly">
+                        <div class="billing__plan">
+                            <div class="billing__plan--upper">
+                                <div
+                                    class="billing__plan--title billing__plan--title--basic"
+                                >
+                                    Basic Plan
+                                </div>
+                                <div class="billing__plan-price--info">
+                                    <span class="billing__plan-price">
+                                        $8
+                                    </span>
+
+                                    <span class="billing__plan-month">
+                                        / month</span
+                                    >
+                                </div>
+                                <span class="billing__plan-timeframe">
+                                    Billed Yearly
+                                </span>
+                                <button class="billing__plan--subscribe-btn">
+                                    Subscribe
+                                </button>
+                                <span class="billing__plan--offer">
+                                    <span class="billing__plan-monthly-link">
+                                        Switch to monthly billing
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        height="12"
+                                        class="opacity-80"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="billing__plan--lower">
+                                <ul class="billing__plan--details">
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Limited generations (~200 /
+                                            month)</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >General commercial terms</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Access to member gallery</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Optional credit top ups</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >3 concurrent fast jobs</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="billing__plan">
+                            <div class="billing__plan--upper">
+                                <div
+                                    class="billing__plan--title billing__plan--title--standard"
+                                >
+                                    Standard Plan
+                                </div>
+                                <div class="billing__plan-price--info">
+                                    <span class="billing__plan-price">
+                                        $24
+                                    </span>
+
+                                    <span class="billing__plan-month">
+                                        / month</span
+                                    >
+                                </div>
+                                <span class="billing__plan-timeframe">
+                                    Billed Yearly
+                                </span>
+                                <button
+                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--standard"
+                                >
+                                    Subscribe
+                                </button>
+                                <span class="billing__plan--offer">
+                                    <span class="billing__plan-monthly-link">
+                                        Switch to monthly billing
+                                    </span>
+
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        height="12"
+                                        class="opacity-80"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="billing__plan--lower">
+                                <ul class="billing__plan--details">
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Limited generations (~200 /
+                                            month)</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >General commercial terms</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Access to member gallery</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Optional credit top ups</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >3 concurrent fast jobs</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="billing__plan">
+                            <div class="billing__plan--upper">
+                                <div
+                                    class="billing__plan--title billing__plan--title--pro"
+                                >
+                                    Pro Plan
+                                </div>
+                                <div class="billing__plan-price--info">
+                                    <span class="billing__plan-price">
+                                        $48
+                                    </span>
+
+                                    <span class="billing__plan-month">
+                                        / month</span
+                                    >
+                                </div>
+                                <span class="billing__plan-timeframe">
+                                    Billed Yearly
+                                </span>
+                                <button
+                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--pro"
+                                >
+                                    Subscribe
+                                </button>
+                                <span class="billing__plan--offer">
+                                    <span class="billing__plan-monthly-link">
+                                        Switch to monthly billing
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        height="12"
+                                        class="opacity-80"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="billing__plan--lower">
+                                <ul class="billing__plan--details">
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Limited generations (~200 /
+                                            month)</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >General commercial terms</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Access to member gallery</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >Optional credit top ups</span
+                                        >
+                                    </li>
+                                    <li class="billing__plan--details-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                            height="18"
+                                            class="text-emerald-600"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="billing__plan--details-text"
+                                            >3 concurrent fast jobs</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="billing__plan">
+                            <div class="billing__plan--upper">
+                                <div
+                                    class="billing__plan--title billing__plan--title--mega"
+                                >
+                                    Mega Plan
+                                </div>
+                                <div class="billing__plan-price--info">
+                                    <span class="billing__plan-price">
+                                        $96
+                                    </span>
+
+                                    <span class="billing__plan-month">
+                                        / month</span
+                                    >
+                                </div>
+                                <span class="billing__plan-timeframe">
+                                    Billed Yearly
+                                </span>
+                                <button
+                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--mega"
+                                >
+                                    Subscribe
+                                </button>
+                                <span class="billing__plan--offer">
+                                    <span class="billing__plan-monthly-link">
+                                        Switch to monthly billing
+                                    </span>
+                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
@@ -1079,5 +1688,96 @@
             </div>
         </main>
         <script src="./script/subMenuToggle.js"></script>
+        <script src="./script/navActive.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const faqItems = document.querySelectorAll(
+                    ".billing__faqs--que-ans-item"
+                );
+
+                faqItems.forEach(function (item) {
+                    const answer = item.querySelector(".billing__faqs--ans");
+                    const question = item.querySelector(".billing__faqs--que");
+
+                    item.addEventListener("click", function () {
+                        if (answer.classList.contains("active")) {
+                            answer.classList.remove("active");
+                            question.classList.remove("active");
+                        } else {
+                            answer.classList.add("active");
+                            question.classList.add("active");
+                        }
+                    });
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const billToggleBtns =
+                    document.querySelectorAll(".billing__selector");
+
+                const montlyBills = document.querySelector(
+                    ".billing__cards--monthly"
+                );
+
+                const yearlyBills = document.querySelector(
+                    ".billing__cards--yearly"
+                );
+
+                const yearlyLinks = document.querySelectorAll(
+                    ".billing__plan-yearly-link"
+                );
+
+                const monthlyLinks = document.querySelectorAll(
+                    ".billing__plan-monthly-link"
+                );
+
+                billToggleBtns.forEach((btn) => {
+                    if (btn.classList.contains("billing__yearly")) {
+                        yearlyBills.style.display = "grid";
+                        montlyBills.style.display = "none";
+                    } else if (btn.classList.contains("billing__monthly")) {
+                        montlyBills.style.display = "grid";
+                        yearlyBills.style.display = "none";
+                    }
+                    yearlyLinks.forEach((link) => {
+                        link.addEventListener("click", () => {
+                            yearlyBills.style.display = "grid";
+                            montlyBills.style.display = "none";
+                            if (btn.classList.contains("billing__yearly")) {
+                                btn.classList.add("active");
+                            } else {
+                                btn.classList.remove("active");
+                            }
+                        });
+                    });
+                    monthlyLinks.forEach((link) => {
+                        link.addEventListener("click", () => {
+                            yearlyBills.style.display = "none";
+                            montlyBills.style.display = "grid";
+                            if (btn.classList.contains("billing__monthly")) {
+                                btn.classList.add("active");
+                            } else {
+                                btn.classList.remove("active");
+                            }
+                        });
+                    });
+
+                    btn.addEventListener("click", () => {
+                        if (btn.classList.contains("billing__yearly")) {
+                            yearlyBills.style.display = "grid";
+                            montlyBills.style.display = "none";
+                        } else if (btn.classList.contains("billing__monthly")) {
+                            montlyBills.style.display = "grid";
+                            yearlyBills.style.display = "none";
+                        }
+                        billToggleBtns.forEach((btn) => {
+                            btn.classList.remove("active");
+                        });
+
+                        btn.classList.add("active");
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

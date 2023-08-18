@@ -1,5 +1,4 @@
 @import "./global.scss";
-@import "./sidebar.scss";
 
 .sub-home {
     display: flex;
@@ -10,6 +9,7 @@
         background-color: #080a16;
         color: white;
         min-height: 130vh;
+        overflow-x: hidden;
 
         &__search {
             position: relative;
@@ -17,6 +17,7 @@
             justify-content: space-evenly;
             align-items: center;
             margin-top: 20px;
+
             &-refresh {
                 color: #f7f7f7;
                 cursor: pointer;
@@ -35,6 +36,7 @@
                     background-color: #0b0e17;
                 }
             }
+
             &-pointer {
                 color: #363942;
                 cursor: pointer;
@@ -62,7 +64,7 @@
 
         &__search-icon {
             position: absolute;
-            right: 14%;
+            right: 16%;
             width: 20px;
             height: 20px;
             cursor: pointer;
@@ -138,10 +140,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 50px;
 
             .main__nav-items {
                 display: flex;
+                gap: 10px;
 
                 .main__nav-item {
                     padding: 5px 10px;
@@ -158,35 +161,34 @@
                         background-color: #1b2234;
                     }
 
-                    &--hot {
-                        &:hover {
-                            svg {
-                                color: #ef4444;
-                            }
+                    &--hot.active {
+                        background-color: #1b2234;
+                        svg {
+                            color: #ef4444;
                         }
                     }
 
-                    &--new {
-                        &:hover {
-                            svg {
-                                color: #eab308;
-                            }
+                    &--new.active {
+                        background-color: #1b2234;
+
+                        svg {
+                            color: #eab308;
                         }
                     }
 
-                    &--top {
-                        &:hover {
-                            svg {
-                                color: #f97316;
-                            }
+                    &--top.active {
+                        background-color: #1b2234;
+
+                        svg {
+                            color: #f97316;
                         }
                     }
 
-                    &--favorited {
-                        &:hover {
-                            svg {
-                                color: #f43f5e;
-                            }
+                    &--favorited.active {
+                        background-color: #1b2234;
+
+                        svg {
+                            color: #f43f5e;
                         }
                     }
                 }
@@ -194,21 +196,23 @@
                 &--right {
                     display: flex;
                     gap: 8px;
+                    margin-right: 40px;
 
                     .main__nav-item {
                         padding: 0;
-                        &--underline {
-                            color: #64748b;
-                            &:hover {
-                                text-decoration: underline;
-                                background-color: transparent;
-                            }
+
+                        color: #64748b;
+
+                        &:hover {
+                            text-decoration: underline;
+                            background-color: transparent;
                         }
 
-                        &--nostyle {
+                        &.active {
+                            color: white;
                             cursor: default;
                             &:hover {
-                                background-color: transparent;
+                                text-decoration: none;
                             }
                         }
 
@@ -218,8 +222,31 @@
 
                         &--emoji {
                             font-size: 20px;
+                            position: relative;
+
+                            svg {
+                                color: #b7b7b7;
+                            }
+
+                            &-text {
+                                display: none;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                font-size: 15px;
+                                background-color: #171718;
+                                border-radius: 5px;
+                                padding: 8px;
+                                color: #8290a5;
+                                min-width: 120px;
+                                top: -50px;
+                            }
+
                             &:hover {
                                 background-color: transparent;
+                                .main__nav-item--emoji-text {
+                                    display: flex;
+                                }
                             }
                         }
                     }

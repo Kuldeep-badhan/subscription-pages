@@ -1,5 +1,4 @@
 @import "./global.scss";
-@import "./sidebar.scss";
 
 .billing {
     display: flex;
@@ -52,7 +51,6 @@
         background-color: transparent;
         color: #64748b;
         font-size: 18px;
-        height: fit-content;
         &:hover {
             color: rgb(148 163 184);
             text-decoration: underline;
@@ -98,10 +96,14 @@
             color: #d9dde7;
             background-color: rgba(226, 232, 240, 0.1);
         }
+
+        &.active {
+            color: #d9dde7;
+            background-color: rgba(226, 232, 240, 0.2);
+        }
     }
 
     &__cards {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         margin: 20px 40px;
@@ -266,6 +268,7 @@
         &--que-ans {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 20px;
 
             &-item {
@@ -284,7 +287,6 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
-            margin-bottom: 15px;
 
             &-text {
                 color: #cdced0;
@@ -299,10 +301,21 @@
         }
 
         &--ans {
+            margin-top: 15px;
+            color: #cbd5e1;
+            display: none;
+        }
+
+        &--que.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        &--ans.active {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            color: #cbd5e1;
         }
     }
 }
