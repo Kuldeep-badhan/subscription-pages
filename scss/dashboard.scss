@@ -1,5 +1,9 @@
 @import "./global.scss";
 
+.dashboard__wrapper {
+    background-color: #080a16;
+}
+
 .dashboard {
     display: flex;
 
@@ -374,7 +378,7 @@
     .dashboard {
         transform: translateX(-290px);
         transition: all 0.3s;
-        overflow-x: hidden;
+        // overflow-x: hidden;
 
         .main {
             min-width: 100%;

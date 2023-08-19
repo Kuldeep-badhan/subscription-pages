@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/css/home.css" />
         <title>Oddits</title>
     </head>
-    <body>
+    <body class="home__wrapper">
         <div class="home">
             <header class="header__container">
                 <div class="header">
@@ -248,6 +248,38 @@
                                     stroke-linejoin="round"
                                 ></path>
                             </svg>
+                            <div class="user__info--sub-menu sub-menu">
+                                <h4 class="sub-menu__title">ODDITS</h4>
+                                <a href="#" class="sub-menu__item"
+                                    >Personal rank card</a
+                                >
+                                <a href="#" class="sub-menu__item">Pro</a>
+                                <a href="#" class="sub-menu__item"
+                                    >Monetize community</a
+                                >
+                                <h4 class="sub-menu__title">SERVERS OWNERS</h4>
+                                <a href="#" class="sub-menu__item"
+                                    >My servers</a
+                                >
+                                <a href="#" class="sub-menu__item"
+                                    >Transfer premium</a
+                                >
+                                <a href="#" class="sub-menu__item"
+                                    >Manage NFT Pass</a
+                                >
+                                <h4 class="sub-menu__title">PAYMENT</h4>
+                                <a href="#" class="sub-menu__item">Billing</a>
+
+                                <div class="sub-meu__line"></div>
+                                <a href="#" class="sub-menu__item">Language</a>
+                                <a href="#" class="sub-menu__item"
+                                    >Changelogs</a
+                                >
+                                <a href="#" class="sub-menu__item"
+                                    >Support server</a
+                                >
+                                <span class="sub-menu__item">Logout</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -706,6 +738,13 @@
             );
             let crossBtn = document.querySelector(".mobile__menu--cross");
             let headerBtns = document.querySelector(".header__btns");
+
+            let userInfo = document.querySelector(".user__info");
+            let userSubMenu = document.querySelector(".sub-menu");
+
+            userInfo.addEventListener("click", () => {
+                userSubMenu.classList.toggle("active");
+            });
 
             hamburgerBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.remove("active");

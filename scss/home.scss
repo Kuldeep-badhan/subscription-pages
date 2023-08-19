@@ -1,5 +1,9 @@
 @import "./global.scss";
 
+.home__wrapper {
+    background-color: #272935;
+}
+
 .home {
     padding-bottom: 100px;
     position: relative;
@@ -26,6 +30,7 @@
                     img {
                         height: 50px;
                         width: 50px;
+                        border-radius: 50%;
                     }
                 }
                 .nav-links {
@@ -88,6 +93,7 @@
                 }
 
                 .user__info {
+                    position: relative;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -101,6 +107,39 @@
                             width: 40px;
                             border-radius: 50%;
                         }
+                    }
+
+                    .sub-menu {
+                        position: absolute;
+                        top: 55px;
+                        right: 0;
+                        background-color: #17181e;
+                        padding: 10px;
+                        border-radius: 10px;
+                        display: none;
+                        flex-direction: column;
+                        gap: 5px;
+                        width: 250px;
+
+                        &__title {
+                            font-size: 14px;
+                            color: white;
+                            padding: 10px;
+                        }
+
+                        &__item {
+                            font-size: 14px;
+                            color: #868a9f;
+                            text-decoration: none;
+                            padding: 10px;
+                            border-radius: 5px;
+                            &:hover {
+                                background-color: rgb(31 41 55);
+                            }
+                        }
+                    }
+                    .sub-menu.active {
+                        display: flex;
                     }
                 }
             }
