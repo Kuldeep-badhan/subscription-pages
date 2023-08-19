@@ -10,10 +10,11 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/css/sidebar.css" />
-        <link rel="stylesheet" href="/css/sub-home.css" />
+        <link rel="stylesheet" href="/css/dashboard.css" />
         <title>Logged In Home Page</title>
+        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
     </head>
-    <body class="sub-home">
+    <body class="dashboard">
         <div class="sidebar__wrapper">
             <div class="sidebar">
                 <div class="sidebar__top">
@@ -22,7 +23,7 @@
                         <ul class="sidebar__nav-list">
                             <li class="sidebar__nav-item">
                                 <a
-                                    href="/sub-home.html"
+                                    href="/dashboard.html"
                                     class="sidebar__nav-link"
                                 >
                                     <svg
@@ -531,49 +532,7 @@
                         <span class="main__nav-item--text"> Favorited</span>
                     </div>
                 </div>
-                <div class="main__nav-items--mobile">
-                    <select
-                        title="sortSelect"
-                        id="sortSelect"
-                        class="custom-select"
-                    >
-                        <option value="hot">
-                            <div class="main__nav-item main__nav-item--hot">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                    height="18"
-                                    class=""
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
-                                    ></path>
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
-                                    ></path>
-                                </svg>
-                                <span class="main__nav-item--text"> Hot</span>
-                            </div>
-                        </option>
-                        <option value="new">
-                            <span class="option__text"> New</span>
-                        </option>
-                        <option value="top">
-                            <span class="option__text"> Top</span>
-                        </option>
-                        <option value="favorited">
-                            <span class="option__text"> Favorited </span>
-                        </option>
-                    </select>
-                </div>
+
                 <div class="main__nav-items main__nav-items--right">
                     <div class="main__nav-item">All</div>
                     <div class="main__nav-item">Grids</div>
@@ -792,21 +751,23 @@
                 ".mobile__menu--hamburger"
             );
             let crossBtn = document.querySelector(".mobile__menu--cross");
-            let subHome = document.querySelector(".sub-home");
+            let dashboard = document.querySelector(".dashboard");
             let sidebarWrapper = document.querySelector(".sidebar__wrapper");
 
             hamburgerBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.remove("active");
                 crossBtn.classList.add("active");
                 sidebarWrapper.classList.add("active");
-                subHome.classList.add("active");
+                dashboard.classList.add("active");
+                document.documentElement.style.overflow = "hidden";
             });
 
             crossBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.add("active");
                 crossBtn.classList.remove("active");
                 sidebarWrapper.classList.remove("active");
-                subHome.classList.remove("active");
+                dashboard.classList.remove("active");
+                document.documentElement.style.overflow = "visible";
             });
         </script>
     </body>

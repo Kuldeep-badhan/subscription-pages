@@ -25,7 +25,7 @@
                             <ul class="sidebar__nav-list">
                                 <li class="sidebar__nav-item">
                                     <a
-                                        href="/sub-home.html"
+                                        href="/dashboard.html"
                                         class="sidebar__nav-link"
                                     >
                                         <svg
@@ -1839,6 +1839,7 @@
                 crossBtn.classList.add("active");
                 sidebarWrapper.classList.add("active");
                 billingPage.classList.add("active");
+                document.documentElement.style.overflow = "hidden";
             });
 
             crossBtn.addEventListener("click", () => {
@@ -1846,6 +1847,7 @@
                 crossBtn.classList.remove("active");
                 sidebarWrapper.classList.remove("active");
                 billingPage.classList.remove("active");
+                document.documentElement.style.overflow = "visible";
             });
         </script>
     </body>
