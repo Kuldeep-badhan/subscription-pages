@@ -8,6 +8,7 @@ sidebar.addEventListener("mouseleave", () => {
     if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn-focus"))
         subMenu.style.display = "none";
 });
+
 sidebar.addEventListener("mouseenter", () => {
     if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn-focus"))
         subMenu.style.display = "block";
