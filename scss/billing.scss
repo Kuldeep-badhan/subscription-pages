@@ -8,6 +8,10 @@
         background-color: #080a16;
         display: flex;
         flex-direction: column;
+
+        .mobile__menu {
+            display: none;
+        }
     }
 
     &__header {
@@ -316,6 +320,71 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .billing {
+        transform: translateX(-290px);
+        transition: all 0.3s;
+        &__main {
+            min-width: 100vw;
+
+            .mobile__menu {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                &--hamburger {
+                    display: none;
+                    padding-inline-start: 60px;
+                    padding-top: 40px;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+
+                &--cross {
+                    display: none;
+                    padding-inline-start: 60px;
+                    padding-top: 40px;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+
+                &--hamburger.active {
+                    display: flex;
+                }
+
+                &--cross.active {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .billing.active {
+        overflow-x: hidden;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .billing {
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media screen and (max-width: 680px) {
+    .billing {
+        &__cards {
+            grid-template-columns: 1fr;
         }
     }
 }

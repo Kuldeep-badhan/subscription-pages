@@ -2,7 +2,7 @@ let subMenuToggleBtn = document.getElementsByClassName(
     "sidebar__menu-toggle-btn"
 )[0];
 let subMenu = document.getElementsByClassName("sidebar__menu")[0];
-let sidebar = document.getElementsByClassName("sidebar")[0];
+let sidebar = document.querySelector(".sidebar");
 
 sidebar.addEventListener("mouseleave", () => {
     if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn-focus"))
