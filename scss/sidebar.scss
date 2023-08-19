@@ -240,6 +240,46 @@
         .sidebar {
             border-radius: 10px;
             background-color: #131627;
+
+            .sidebar__menu {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 100%;
+
+                &-list {
+                    padding: 10px;
+                }
+
+                &-item {
+                    margin-top: 5px;
+                }
+
+                &-link {
+                    text-decoration: none;
+                    color: rgb(203, 213, 225);
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+
+                    &:hover {
+                        background-color: rgba(203, 213, 225, 0.4);
+                    }
+
+                    &--sign-out {
+                        &:hover {
+                            background-color: rgb(220 38 38);
+                        }
+                    }
+                }
+            }
         }
     }
 }
