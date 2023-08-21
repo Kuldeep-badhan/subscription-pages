@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/sidebar.css" />
+        <link rel="stylesheet" href="/css/dashboard.css" />
+        <title>Logged In Home Page</title>
+        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
+    </head>
+    <body class="dashboard__wrapper">
+        <div class="dashboard">
+            <div class="sidebar__wrapper">
+                <div class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__logo">Oddits</div>
+                        <nav class="sidebar__nav">
+                            <ul class="sidebar__nav-list">
+                                <li class="sidebar__nav-item">
+                                    <a
+                                        href="/dashboard.html"
+                                        class="sidebar__nav-link"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                            height="22"
+                                            class="text-[#95B4F0] shrink-0 grow-0"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                            ></path>
+                                        </svg>
+                                        <span class="sidebar__nav-link--text">
+                                            Home
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar__nav-item">
+                                    <a href="#" class="sidebar__nav-link">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                            height="22"
+                                            class="text-[#95B4F0] shrink-0 grow-0"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sidebar__nav-link--text">
+                                            Community Showcase
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+                            <ul class="sidebar__nav-list">
+                                <li class="sidebar__nav-item">
+                                    <a href="#" class="sidebar__nav-link">
+                                        <span class="sidebar__icon--light">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                                height="22"
+                                                class="text-[#5a7dc2] shrink-0 grow-0"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+
+                                        <span class="sidebar__nav-link--small">
+                                            Manage Subs
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar__nav-item">
+                                    <a href="#" class="sidebar__nav-link"
+                                        ><span class="sidebar__icon--light">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                                height="22"
+                                                class="text-[#5a7dc2] shrink-0 grow-0"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+
+                                        <span class="sidebar__nav-link--small">
+                                            Help & FAQ
+                                        </span></a
+                                    >
+                                </li>
+                                <li class="sidebar__nav-item">
+                                    <a href="/" class="sidebar__nav-link">
+                                        <span class="sidebar__icon--light">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                                height="22"
+                                                class="text-[#5a7dc2] shrink-0 grow-0"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+
+                                        <span class="sidebar__nav-link--small">
+                                            About & Careers
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <button class="sidebar__notification-btn">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                height="22"
+                                class="shrink-0 text-blue-400 transition-transform"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                                ></path>
+                            </svg>
+                            <span> Notifications</span>
+
+                            <span class="notification-count">0</span>
+                        </button>
+                        <div class="sidebar__user-box">
+                            <img
+                                src="/img/discord.png"
+                                alt="User Avatar"
+                                class="sidebar__avatar"
+                            />
+                            <div class="sidebar__user-info">
+                                <div class="sidebar__user-name">John Doe</div>
+                                <div class="sidebar__user-hashtag">#0</div>
+                            </div>
+
+                            <button
+                                title="toggle menu button"
+                                class="sidebar__menu-toggle-btn"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    height="20"
+                                    class="text-slate-300"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="sidebar__menu">
+                                <ul class="sidebar__menu-list">
+                                    <li class="sidebar__menu-item">
+                                        <a href="#" class="sidebar__menu-link">
+                                            <span> Manage Subs</span>
+
+                                            <svg
+                                                size="16"
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                                stroke="none"
+                                                class="inline-block undefined"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g id="Avatar">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM19.3995 17.1246C20.4086 15.6703 21 13.9042 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.9042 3.59138 15.6703 4.6005 17.1246C5.72595 15.6381 8.3706 15 12 15C15.6294 15 18.274 15.6381 19.3995 17.1246ZM17.9647 18.7398C17.672 17.6874 15.5694 17 12 17C8.43062 17 6.328 17.6874 6.03532 18.7398C7.6233 20.1462 9.71194 21 12 21C14.2881 21 16.3767 20.1462 17.9647 18.7398ZM12 15C9.76086 15 8 13.4274 8 10C8 7.75576 9.5791 6 12 6C14.4142 6 16 7.92158 16 10.2C16 13.4796 14.2181 15 12 15ZM10 10C10 12.2693 10.8182 13 12 13C13.1777 13 14 12.2984 14 10.2C14 8.95042 13.2157 8 12 8C10.7337 8 10 8.81582 10 10Z"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a href="#" class="sidebar__menu-link">
+                                            <span> View Pass </span>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                                height="16"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+                                                ></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a href="#" class="sidebar__menu-link">
+                                            <span> Go to Discord </span>
+                                            <svg
+                                                size="16"
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 18 18"
+                                                fill="currentColor"
+                                                stroke="none"
+                                                class="inline-block undefined"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g id="ExternalLink">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M8.77814 10.2803L14.2478 4.81066V8.25H15.7478V2.25H9.74781V3.75H13.1872L7.71748 9.21967L8.77814 10.2803ZM14.25 14.25V10.5H12.75V14.25H3.75V5.25H7.5V3.75H3.75C2.92157 3.75 2.25 4.42157 2.25 5.25V14.25C2.25 15.0784 2.92157 15.75 3.75 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25Z"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__menu-item">
+                                        <a
+                                            href="#"
+                                            class="sidebar__menu-link sidebar__menu-link--sign-out"
+                                        >
+                                            <span> Sign Out</span>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                                height="16"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                                                ></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main__search">
+                    <div class="mobile__menu">
+                        <span
+                            class="mobile__menu--hamburger mobile__menu--btn active"
+                        >
+                            <svg
+                                size="25"
+                                color="white"
+                                width="25"
+                                height="25"
+                                viewBox="0 0 24 24"
+                                fill="#FFFFFF"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="Menu">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M22 7V5H2V7H22ZM22 11V13H2V11H22ZM22 17V19H2V17H22Z"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="mobile__menu--cross mobile__menu--btn">
+                            <svg
+                                size="25"
+                                color="white"
+                                width="25"
+                                height="25"
+                                viewBox="0 0 30 30"
+                                fill="#FFFFFF"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="CloseSmall">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M15 13.5858L21.364 7.22183L22.7782 8.63604L16.4143 15L22.7782 21.364L21.364 22.7782L15 16.4142L8.63608 22.7782L7.22187 21.364L13.5858 15L7.22187 8.63604L8.63608 7.22183L15 13.5858Z"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="main__search-input-wrapper">
+                        <input
+                            type="text"
+                            class="main__search-input"
+                            placeholder="Search..."
+                        />
+                        <button title="search icon" class="main__search-icon">
+                            <svg
+                                size="22"
+                                class="inline-block"
+                                color="inherit"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                stroke="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="Search">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929L20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <button title="refresh button" class="main__search-refresh">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="22"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                            ></path>
+                        </svg>
+                    </button>
+                    <button title="pointer button" class="main__search-pointer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            height="22"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="main__user-gradient-box">
+                    <div class="main__user-box">
+                        <img
+                            src="/img/discord.png"
+                            alt="User Avatar"
+                            class="main__user-avatar"
+                        />
+                        <div class="main__user-info">
+                            <div class="main__user-name">John Doe</div>
+                            <div class="main__user-jobs">0 Jobs</div>
+                        </div>
+                    </div>
+                    <a href="/billing.html" class="main__user-plan-btn">
+                        <span> Purchase Plan </span>
+                        <svg
+                            height="16"
+                            class="inline-block"
+                            width="16"
+                            viewBox="0 0 18 18"
+                            fill="currentColor"
+                            stroke="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="ExternalLink">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8.77814 10.2803L14.2478 4.81066V8.25H15.7478V2.25H9.74781V3.75H13.1872L7.71748 9.21967L8.77814 10.2803ZM14.25 14.25V10.5H12.75V14.25H3.75V5.25H7.5V3.75H3.75C2.92157 3.75 2.25 4.42157 2.25 5.25V14.25C2.25 15.0784 2.92157 15.75 3.75 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25Z"
+                                ></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="main__navbar">
+                    <div class="main__nav-items">
+                        <div class="main__nav-item main__nav-item--hot">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                height="18"
+                                class=""
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+                                ></path>
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+                                ></path>
+                            </svg>
+                            <span class="main__nav-item--text"> Hot</span>
+                        </div>
+                        <div class="main__nav-item main__nav-item--new">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                height="18"
+                                class="text-yellow-500"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                                ></path>
+                            </svg>
+                            <span class="main__nav-item--text"> New</span>
+                        </div>
+                        <div class="main__nav-item main__nav-item--top">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                height="18"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                                ></path>
+                            </svg>
+                            <span class="main__nav-item--text"> Top</span>
+                        </div>
+                        <div class="main__nav-item main__nav-item--favorited">
+                            <svg
+                                height="18"
+                                width="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="Heart">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M16.5532 2.00002C15.1056 2 14.1724 2.17246 13.1027 2.69607C12.7066 2.88993 12.335 3.12339 11.99 3.39576C11.6582 3.13866 11.3015 2.91592 10.9218 2.72813C9.83132 2.18878 8.85028 2 7.45455 2C3.71644 2 1 5.09727 1 9.11988C1 12.1578 2.69383 15.0923 5.84884 17.9299C7.50489 19.4193 9.61932 20.8933 11.1336 21.6775L12 22.1261L12.8664 21.6775C14.3807 20.8933 16.4951 19.4193 18.1512 17.9299C21.3062 15.0923 23 12.1578 23 9.11988C23 5.13984 20.2579 2.01536 16.5532 2.00002ZM21 9.11988C21 11.4999 19.5862 13.9493 16.8137 16.4429C15.3022 17.8023 13.359 19.1609 12 19.8737C10.641 19.1609 8.69782 17.8023 7.18628 16.4429C4.41382 13.9493 3 11.4999 3 9.11988C3 6.14772 4.88364 4 7.45455 4C8.56428 4 9.24813 4.13159 10.0351 4.52084C10.5 4.75077 10.9109 5.05437 11.2665 5.43377L12.0023 6.2187L12.7315 5.42755C13.0951 5.03295 13.512 4.72244 13.9819 4.49243C14.7459 4.11849 15.387 4 16.5491 4.00001C19.0882 4.01053 21 6.18896 21 9.11988Z"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span class="main__nav-item--text"> Favorited</span>
+                        </div>
+                    </div>
+
+                    <div class="main__nav-items main__nav-items--right">
+                        <div class="main__nav-item">All</div>
+                        <div class="main__nav-item">Grids</div>
+                        <div class="main__nav-item">Upscales</div>
+                        <div
+                            class="main__nav-item main__nav-item--emoji main__nav-item--emoji-one"
+                        >
+                            <p class="main__nav-item--emoji-text">
+                                Not Unrated
+                            </p>
+
+                            <svg
+                                height="20"
+                                width="20"
+                                viewBox="0 0 32 32"
+                                fill="currentColor"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="AlertTriangle">
+                                    <path
+                                        d="M15.9989 29.9978C25.3333 29.9978 29.9978 23.7303 29.9978 15.9989C29.9978 8.26751 25.3333 2 15.9989 2C6.66443 2 2 8.26751 2 15.9989C2 23.7303 6.66443 29.9978 15.9989 29.9978Z"
+                                        fill="#FFB02E"
+                                    ></path>
+                                    <path
+                                        d="M10.4191 16.2244C12.742 16.2244 14.6251 14.3414 14.6251 12.0185C14.6251 9.69557 12.742 7.8125 10.4191 7.8125C8.09621 7.8125 6.21313 9.69557 6.21313 12.0185C6.21313 14.3414 8.09621 16.2244 10.4191 16.2244Z"
+                                        fill="white"
+                                    ></path>
+                                    <path
+                                        d="M21.5683 16.3011C23.9123 16.3011 25.8126 14.4009 25.8126 12.0568C25.8126 9.71274 23.9123 7.8125 21.5683 7.8125C19.2242 7.8125 17.324 9.71274 17.324 12.0568C17.324 14.4009 19.2242 16.3011 21.5683 16.3011Z"
+                                        fill="white"
+                                    ></path>
+                                    <path
+                                        d="M11 15C12.6569 15 14 13.6569 14 12C14 10.3431 12.6569 9 11 9C9.34315 9 8 10.3431 8 12C8 13.6569 9.34315 15 11 15Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M21 15C22.6569 15 24 13.6569 24 12C24 10.3431 22.6569 9 21 9C19.3431 9 18 10.3431 18 12C18 13.6569 19.3431 15 21 15Z"
+                                        fill="#402A32"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="main__nav-item main__nav-item--emoji">
+                            <p class="main__nav-item--emoji-text">
+                                Not Unrated
+                            </p>
+
+                            <svg
+                                height="20"
+                                width="20"
+                                viewBox="0 0 32 32"
+                                fill="currentColor"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="AlertTriangle">
+                                    <path
+                                        d="M15.9989 29.9978C25.3333 29.9978 29.9978 23.7303 29.9978 15.9989C29.9978 8.26751 25.3333 2 15.9989 2C6.66443 2 2 8.26751 2 15.9989C2 23.7303 6.66443 29.9978 15.9989 29.9978Z"
+                                        fill="#FFB02E"
+                                    ></path>
+                                    <path
+                                        d="M6 15.5C6 15.331 6.00932 15.1642 6.02746 15H10.0313L12.332 15.9227L14.4639 15H14.9725C14.9907 15.1642 15 15.331 15 15.5C15 17.9853 12.9853 20 10.5 20C8.01472 20 6 17.9853 6 15.5Z"
+                                        fill="white"
+                                    ></path>
+                                    <path
+                                        d="M17 15.5C17 15.331 17.0093 15.1642 17.0275 15H21.0407L23.2816 15.7124L25.448 15H25.9725C25.9907 15.1642 26 15.331 26 15.5C26 17.9853 23.9853 20 21.5 20C19.0147 20 17 17.9853 17 15.5Z"
+                                        fill="white"
+                                    ></path>
+                                    <path
+                                        d="M10 15.25C10 15.1655 10.0046 15.0821 10.0137 15H14.4863C14.4954 15.0821 14.5 15.1655 14.5 15.25C14.5 16.4945 13.4945 17.5 12.25 17.5C11.0055 17.49 10 16.4845 10 15.25Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M21 15.25C21 15.1655 21.0046 15.0821 21.0137 15H25.4863C25.4954 15.0821 25.5 15.1655 25.5 15.25C25.5 16.4945 24.4945 17.5 23.25 17.5C22.0055 17.49 21 16.4845 21 15.25Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M8.06915 9.98761C7.47625 10.5505 7.11769 11.2277 6.97423 11.6581C6.88691 11.9201 6.60375 12.0617 6.34178 11.9743C6.07981 11.887 5.93823 11.6039 6.02555 11.3419C6.21542 10.7723 6.65687 9.94951 7.38064 9.26239C8.1129 8.5672 9.1478 8 10.4999 8C10.776 8 10.9999 8.22386 10.9999 8.5C10.9999 8.77614 10.776 9 10.4999 9C9.45198 9 8.65355 9.4328 8.06915 9.98761Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M23.9309 9.98761C24.5238 10.5505 24.8823 11.2277 25.0258 11.6581C25.1131 11.9201 25.3963 12.0617 25.6582 11.9743C25.9202 11.887 26.0618 11.6039 25.9745 11.3419C25.7846 10.7723 25.3431 9.94951 24.6194 9.26239C23.8871 8.5672 22.8522 8 21.5001 8C21.224 8 21.0001 8.22386 21.0001 8.5C21.0001 8.77614 21.224 9 21.5001 9C22.548 9 23.3465 9.4328 23.9309 9.98761Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M12.8944 25.4472C13.0659 25.1042 13.9954 24 16 24C18.0046 24 18.934 25.1042 19.1055 25.4472C19.3525 25.9412 19.9532 26.1414 20.4472 25.8944C20.9412 25.6474 21.1414 25.0468 20.8944 24.5528C20.3992 23.5625 18.7954 22 16 22C13.2046 22 11.6007 23.5625 11.1055 24.5528C10.8586 25.0468 11.0588 25.6474 11.5528 25.8944C12.0467 26.1414 12.6474 25.9412 12.8944 25.4472Z"
+                                        fill="#402A32"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="main__nav-item main__nav-item--emoji">
+                            <p class="main__nav-item--emoji-text">
+                                Not Unrated
+                            </p>
+
+                            <svg
+                                height="20"
+                                width="20"
+                                viewBox="0 0 32 32"
+                                fill="currentColor"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="AlertTriangle">
+                                    <path
+                                        d="M15.9989 29.9978C25.3333 29.9978 29.9978 23.7303 29.9978 15.9989C29.9978 8.26751 25.3333 2 15.9989 2C6.66443 2 2 8.26751 2 15.9989C2 23.7303 6.66443 29.9978 15.9989 29.9978Z"
+                                        fill="#FFB02E"
+                                    ></path>
+                                    <path
+                                        d="M8.98156 11.1909C9.02964 10.9436 9.13971 10.6405 9.34896 10.4125C9.52829 10.2171 9.84698 10 10.4999 10C11.1417 10 11.4685 10.2216 11.6572 10.4288C11.8753 10.6683 11.9804 10.9737 12.0147 11.1711C12.1092 11.7152 12.6269 12.0797 13.171 11.9853C13.7152 11.8908 14.0797 11.373 13.9852 10.8289C13.9062 10.374 13.6799 9.6794 13.1357 9.08196C12.562 8.45218 11.6955 8 10.4999 8C9.31564 8 8.45269 8.4313 7.87551 9.06013C7.32826 9.65637 7.10696 10.3533 7.01833 10.8091C6.91291 11.3513 7.26694 11.8762 7.80907 11.9816C8.3512 12.087 8.87614 11.733 8.98156 11.1909Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M19.9818 11.1909C20.0299 10.9436 20.14 10.6405 20.3492 10.4125C20.5285 10.2171 20.8472 10 21.5002 10C22.1419 10 22.4687 10.2216 22.6574 10.4288C22.8756 10.6683 22.9807 10.9737 23.0149 11.1711C23.1094 11.7152 23.6271 12.0797 24.1713 11.9853C24.7154 11.8908 25.0799 11.373 24.9854 10.8289C24.9064 10.374 24.6802 9.6794 24.1359 9.08196C23.5623 8.45218 22.6957 8 21.5002 8C20.3159 8 19.4529 8.4313 18.8758 9.06013C18.3285 9.65637 18.1072 10.3533 18.0186 10.8091C17.9132 11.3513 18.2672 11.8762 18.8093 11.9816C19.3514 12.087 19.8764 11.733 19.9818 11.1909Z"
+                                        fill="#402A32"
+                                    ></path>
+                                    <path
+                                        d="M16 25C7 25 7 16 7 16H25C25 16 25 25 16 25Z"
+                                        fill="#BB1D80"
+                                    ></path>
+                                    <path
+                                        d="M8 16.5V16H24V16.5C24 17.0523 23.5523 17.5 23 17.5H9C8.44772 17.5 8 17.0523 8 16.5Z"
+                                        fill="white"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="main__nav-item main__nav-item--emoji">
+                            <p class="main__nav-item--emoji-text">
+                                Not Unrated
+                            </p>
+
+                            <svg
+                                height="20"
+                                width="20"
+                                viewBox="0 0 32 32"
+                                fill="currentColor"
+                                stroke="none"
+                                class="inline-block undefined"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="AlertTriangle">
+                                    <path
+                                        d="M15.9989 29.9978C25.3333 29.9978 29.9978 23.7303 29.9978 15.9989C29.9978 8.26751 25.3333 2 15.9989 2C6.66443 2 2 8.26751 2 15.9989C2 23.7303 6.66443 29.9978 15.9989 29.9978Z"
+                                        fill="#FFB02E"
+                                    ></path>
+                                    <path
+                                        d="M16 25C7 25 7 16 7 16H25C25 16 25 25 16 25Z"
+                                        fill="#BB1D80"
+                                    ></path>
+                                    <path
+                                        d="M8 16.5V16H24V16.5C24 17.0523 23.5523 17.5 23 17.5H9C8.44772 17.5 8 17.0523 8 16.5Z"
+                                        fill="white"
+                                    ></path>
+                                    <path
+                                        d="M3.18104 9.75037C5.19703 12.0771 7.8791 13.096 9.25386 13.4894C9.81699 13.6506 10.4079 13.4889 10.8249 13.0776C12.0184 11.9005 14.4238 9.19933 14.938 6.11531C15.656 1.80872 10.256 0.495856 8.07985 4.04542C2.98933 1.65437 0.296489 6.42127 3.18104 9.75037Z"
+                                        fill="#F70A8D"
+                                    ></path>
+                                    <path
+                                        d="M28.8172 9.75198C26.8022 12.0775 24.1215 13.0961 22.7473 13.4894C22.1841 13.6506 21.5932 13.4889 21.1762 13.0776C19.9831 11.9008 17.579 9.20094 17.0651 6.11839C16.3474 1.81356 21.7452 0.50123 23.9204 4.04935C29.0089 1.65928 31.7006 6.42423 28.8172 9.75198Z"
+                                        fill="#F70A8D"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__body">
+                    <div class="main__body--text-link">
+                        <div class="main__body--text">
+                            When you generate an image, it will appear here.
+                        </div>
+                        <a href="#" class="main__discord-link">
+                            <span class="main__discord-link--text">
+                                Join the Discord to start creating!
+                            </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                height="24"
+                                color=""
+                                class="ml-1 inline -rotate-45"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main__body--generated-images">Images</div>
+                    <button class="main__body--retry-btn">Retry</button>
+                </div>
+            </div>
+        </div>
+        <script src="./script/subMenuToggle.js"></script>
+        <script src="./script/navActive.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                let navItems = document.querySelectorAll(".main__nav-item");
+
+                navItems.forEach((item) => {
+                    item.addEventListener("click", () => {
+                        navItems.forEach((navItem) => {
+                            navItem.classList.remove("active");
+                        });
+
+                        item.classList.add("active");
+                    });
+                });
+            });
+        </script>
+        <script>
+            let hamburgerBtn = document.querySelector(
+                ".mobile__menu--hamburger"
+            );
+            let crossBtn = document.querySelector(".mobile__menu--cross");
+            let dashboard = document.querySelector(".dashboard");
+            let sidebarWrapper = document.querySelector(".sidebar__wrapper");
+
+            hamburgerBtn.addEventListener("click", () => {
+                hamburgerBtn.classList.remove("active");
+                crossBtn.classList.add("active");
+                sidebarWrapper.classList.add("active");
+                dashboard.classList.add("active");
+                document.documentElement.style.overflow = "hidden";
+            });
+
+            crossBtn.addEventListener("click", () => {
+                hamburgerBtn.classList.add("active");
+                crossBtn.classList.remove("active");
+                sidebarWrapper.classList.remove("active");
+                dashboard.classList.remove("active");
+                document.documentElement.style.overflow = "visible";
+            });
+        </script>
+    </body>
+</html>
