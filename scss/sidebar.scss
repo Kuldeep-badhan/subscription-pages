@@ -241,11 +241,19 @@
             border-radius: 10px;
             background-color: #131627;
 
+            &__top {
+                padding: 20px 10px;
+            }
+
+            &__bottom {
+                padding: 10px;
+            }
+
             .sidebar__menu {
                 position: absolute;
                 width: 100%;
                 left: 0;
-                bottom: 100%;
+                bottom: 110%;
 
                 &-list {
                     padding: 10px;
@@ -279,6 +287,10 @@
                         }
                     }
                 }
+            }
+
+            &__user-box {
+                background-color: #0f111d;
             }
         }
     }

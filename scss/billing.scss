@@ -524,6 +524,9 @@
 
 @media screen and (max-width: 400px) {
     .billing {
+        &__title {
+            font-size: 27px;
+        }
         &__yearly,
         &__monthly {
             padding: 10px 20px;
