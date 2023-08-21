@@ -19,14 +19,14 @@
         <main class="billing">
             <div class="sidebar__wrapper">
                 <div class="sidebar">
-                    <div class="sidebar__top">
-                        <div class="sidebar__logo">Oddits</div>
-                        <nav class="sidebar__nav">
-                            <ul class="sidebar__nav-list">
-                                <li class="sidebar__nav-item">
+                    <div class="sidebar-nav">
+                        <div class="sidebar-nav__logo">Oddits</div>
+                        <nav class="sidebar-nav__list-container">
+                            <ul class="sidebar-nav__list">
+                                <li class="sidebar-nav__list-item">
                                     <a
                                         href="/dashboard.html"
-                                        class="sidebar__nav-link"
+                                        class="sidebar-nav__list-link"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -44,13 +44,13 @@
                                                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                                             ></path>
                                         </svg>
-                                        <span class="sidebar__nav-link--text">
+                                        <span class="sidebar-nav__list-text">
                                             Home
                                         </span>
                                     </a>
                                 </li>
-                                <li class="sidebar__nav-item">
-                                    <a href="#" class="sidebar__nav-link">
+                                <li class="sidebar-nav__list-item">
+                                    <a href="#" class="sidebar-nav__list-link">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
@@ -67,17 +67,19 @@
                                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                                             ></path>
                                         </svg>
-                                        <span class="sidebar__nav-link--text">
+                                        <span class="sidebar-nav__list-text">
                                             Community Showcase
                                         </span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="line"></div>
-                            <ul class="sidebar__nav-list">
-                                <li class="sidebar__nav-item">
-                                    <a href="#" class="sidebar__nav-link">
-                                        <span class="sidebar__icon--light">
+                            <div class="sidebar-nav__line"></div>
+                            <ul class="sidebar-nav__list">
+                                <li class="sidebar-nav__list-item">
+                                    <a href="#" class="sidebar-nav__list-link">
+                                        <span
+                                            class="sidebar-nav__list-icon--light"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
@@ -96,14 +98,18 @@
                                             </svg>
                                         </span>
 
-                                        <span class="sidebar__nav-link--small">
+                                        <span
+                                            class="sidebar-nav__list-text--small"
+                                        >
                                             Manage Subs
                                         </span>
                                     </a>
                                 </li>
-                                <li class="sidebar__nav-item">
-                                    <a href="#" class="sidebar__nav-link"
-                                        ><span class="sidebar__icon--light">
+                                <li class="sidebar-nav__list-item">
+                                    <a href="#" class="sidebar-nav__list-link"
+                                        ><span
+                                            class="sidebar-nav__list-icon--light"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
@@ -122,14 +128,18 @@
                                             </svg>
                                         </span>
 
-                                        <span class="sidebar__nav-link--small">
+                                        <span
+                                            class="sidebar-nav__list-text--small"
+                                        >
                                             Help & FAQ
                                         </span></a
                                     >
                                 </li>
-                                <li class="sidebar__nav-item">
-                                    <a href="/" class="sidebar__nav-link">
-                                        <span class="sidebar__icon--light">
+                                <li class="sidebar-nav__list-item">
+                                    <a href="#" class="sidebar-nav__list-link"
+                                        ><span
+                                            class="sidebar-nav__list-icon--light"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
@@ -148,15 +158,17 @@
                                             </svg>
                                         </span>
 
-                                        <span class="sidebar__nav-link--small">
+                                        <span
+                                            class="sidebar-nav__list-text--small"
+                                        >
                                             About & Careers
-                                        </span>
-                                    </a>
+                                        </span></a
+                                    >
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="sidebar__bottom">
+                    <div class="sidebar-detail">
                         <button class="sidebar__notification-btn">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -174,9 +186,11 @@
                                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                                 ></path>
                             </svg>
-                            <span> Notifications</span>
+                            <span class="sidebar__btn-text">
+                                Notifications</span
+                            >
 
-                            <span class="notification-count">0</span>
+                            <span class="sidebar__notification-count">0</span>
                         </button>
                         <div class="sidebar__user-box">
                             <img
@@ -188,27 +202,28 @@
                                 <div class="sidebar__user-name">John Doe</div>
                                 <div class="sidebar__user-hashtag">#0</div>
                             </div>
-
                             <button
                                 title="toggle menu button"
                                 class="sidebar__menu-toggle-btn"
                             >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                    height="20"
-                                    class="text-slate-300"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-                                    ></path>
-                                </svg>
+                                <div class="sidebar__menu-btn-icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        aria-hidden="true"
+                                        height="20"
+                                        class="text-slate-300"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                                        ></path>
+                                    </svg>
+                                </div>
                             </button>
                             <div class="sidebar__menu">
                                 <ul class="sidebar__menu-list">
@@ -308,11 +323,9 @@
                     </div>
                 </div>
             </div>
-            <div class="billing__main">
-                <div class="mobile__menu">
-                    <span
-                        class="mobile__menu--hamburger mobile__menu--btn active"
-                    >
+            <div class="billing__content">
+                <div class="billing__mobile-menu">
+                    <span class="billing__hamburger-btn active">
                         <svg
                             size="25"
                             color="white"
@@ -333,7 +346,7 @@
                             </g>
                         </svg>
                     </span>
-                    <span class="mobile__menu--cross mobile__menu--btn">
+                    <span class="billing__cross-btn">
                         <svg
                             size="25"
                             color="white"
@@ -384,7 +397,7 @@
                                 d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
                             ></path>
                         </svg>
-                        <span class="billing__signout-btn--text">Sign Out</span>
+                        <span class="billing__signout-btn-text">Sign Out</span>
                     </button>
                 </div>
                 <div class="billing__body">
@@ -402,13 +415,13 @@
                     </div>
                     <div class="billing__cards billing__cards--monthly">
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--basic"
+                                    class="billing__plan-title billing__plan-title--basic"
                                 >
                                     Basic Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $10
                                     </span>
@@ -420,11 +433,11 @@
                                 <span class="billing__plan-timeframe">
                                     Billed Monthly
                                 </span>
-                                <button class="billing__plan--subscribe-btn">
+                                <button class="billing__plan-subscribe-btn">
                                     Subscribe
                                 </button>
                                 <span
-                                    class="billing__plan--offer billing__plan--offer-yearly"
+                                    class="billing__plan-offer billing__plan-offer-yearly"
                                 >
                                     <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
@@ -444,9 +457,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -461,13 +474,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -482,12 +494,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -502,12 +513,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -522,12 +532,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -542,8 +551,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -551,13 +559,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--standard"
+                                    class="billing__plan-title billing__plan-title--standard"
                                 >
                                     Standard Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $30
                                     </span>
@@ -570,11 +578,11 @@
                                     Billed Monthly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--standard"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--standard"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
@@ -593,9 +601,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -610,13 +618,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -631,12 +638,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -651,12 +657,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -671,12 +676,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -691,8 +695,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -700,13 +703,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--pro"
+                                    class="billing__plan-title billing__plan-title--pro"
                                 >
                                     Pro Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $60
                                     </span>
@@ -719,11 +722,11 @@
                                     Billed Monthly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--pro"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--pro"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
@@ -742,9 +745,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -759,13 +762,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -780,12 +782,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -800,12 +801,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -820,12 +820,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -840,8 +839,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -849,13 +847,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--mega"
+                                    class="billing__plan-title billing__plan-title--mega"
                                 >
                                     Mega Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $120
                                     </span>
@@ -868,11 +866,11 @@
                                     Billed Monthly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--mega"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--mega"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-yearly-link">
                                         save with annual billing (20% off) </span
                                     ><svg
@@ -891,9 +889,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -908,13 +906,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -929,12 +926,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -949,12 +945,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -969,12 +964,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -989,8 +983,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -1000,13 +993,13 @@
                     </div>
                     <div class="billing__cards billing__cards--yearly">
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--basic"
+                                    class="billing__plan-title billing__plan-title--basic"
                                 >
                                     Basic Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $8
                                     </span>
@@ -1018,10 +1011,10 @@
                                 <span class="billing__plan-timeframe">
                                     Billed Yearly
                                 </span>
-                                <button class="billing__plan--subscribe-btn">
+                                <button class="billing__plan-subscribe-btn">
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-monthly-link">
                                         Switch to monthly billing
                                     </span>
@@ -1041,9 +1034,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1058,13 +1051,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1079,12 +1071,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1099,12 +1090,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1119,12 +1109,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1139,8 +1128,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -1148,13 +1136,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--standard"
+                                    class="billing__plan-title billing__plan-title--standard"
                                 >
                                     Standard Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $24
                                     </span>
@@ -1167,11 +1155,11 @@
                                     Billed Yearly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--standard"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--standard"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-monthly-link">
                                         Switch to monthly billing
                                     </span>
@@ -1192,9 +1180,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1209,13 +1197,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1230,12 +1217,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1250,12 +1236,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1270,12 +1255,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1290,8 +1274,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -1299,13 +1282,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--pro"
+                                    class="billing__plan-title billing__plan-title--pro"
                                 >
                                     Pro Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $48
                                     </span>
@@ -1318,11 +1301,11 @@
                                     Billed Yearly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--pro"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--pro"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-monthly-link">
                                         Switch to monthly billing
                                     </span>
@@ -1342,9 +1325,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1359,13 +1342,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1380,12 +1362,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1400,12 +1381,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1420,12 +1400,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1440,8 +1419,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -1449,13 +1427,13 @@
                             </div>
                         </div>
                         <div class="billing__plan">
-                            <div class="billing__plan--upper">
+                            <div class="billing__plan-upper">
                                 <div
-                                    class="billing__plan--title billing__plan--title--mega"
+                                    class="billing__plan-title billing__plan-title--mega"
                                 >
                                     Mega Plan
                                 </div>
-                                <div class="billing__plan-price--info">
+                                <div class="billing__plan-price-info">
                                     <span class="billing__plan-price">
                                         $96
                                     </span>
@@ -1468,11 +1446,11 @@
                                     Billed Yearly
                                 </span>
                                 <button
-                                    class="billing__plan--subscribe-btn billing__plan--subscribe-btn--mega"
+                                    class="billing__plan-subscribe-btn billing__plan-subscribe-btn--mega"
                                 >
                                     Subscribe
                                 </button>
-                                <span class="billing__plan--offer">
+                                <span class="billing__plan-offer">
                                     <span class="billing__plan-monthly-link">
                                         Switch to monthly billing
                                     </span>
@@ -1492,9 +1470,9 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="billing__plan--lower">
-                                <ul class="billing__plan--details">
-                                    <li class="billing__plan--details-item">
+                            <div class="billing__plan-lower">
+                                <ul class="billing__plan-details">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1509,13 +1487,12 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Limited generations (~200 /
                                             month)</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1530,12 +1507,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >General commercial terms</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1550,12 +1526,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Access to member gallery</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1570,12 +1545,11 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >Optional credit top ups</span
                                         >
                                     </li>
-                                    <li class="billing__plan--details-item">
+                                    <li class="billing__plan-details-item">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20"
@@ -1590,8 +1564,7 @@
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                        <span
-                                            class="billing__plan--details-text"
+                                        <span class="billing__plan-details-text"
                                             >3 concurrent fast jobs</span
                                         >
                                     </li>
@@ -1600,18 +1573,18 @@
                         </div>
                     </div>
                     <div class="billing__faqs">
-                        <h3 class="billing__faqs--title">
+                        <h3 class="billing__faqs-title">
                             Frequently Asked Questions
                         </h3>
-                        <p class="billing__faqs--paragraph">
+                        <p class="billing__faqs-paragraph">
                             Can't find the answer you're looking for? <br />
                             Read the Quick Start Guide or visit the
                             #member-support channel to ask for help.
                         </p>
-                        <div class="billing__faqs--que-ans">
-                            <div class="billing__faqs--que-ans-item">
-                                <h4 class="billing__faqs--que">
-                                    <span class="billing__faqs--que-text">
+                        <div class="billing__faqs-que-ans">
+                            <div class="billing__faqs-que-ans-item">
+                                <h4 class="billing__faqs-que">
+                                    <span class="billing__faqs-que-text">
                                         What are "Fast Hours"?</span
                                     >
                                     <svg
@@ -1630,28 +1603,28 @@
                                         ></path>
                                     </svg>
                                 </h4>
-                                <div class="billing__faqs--ans">
-                                    <p class="billing__faqs--ans-para">
+                                <div class="billing__faqs-ans">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis distinctio neque incidunt magni
                                         nulla voluptas id eos?
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
                                     </p>
                                 </div>
                             </div>
-                            <div class="billing__faqs--que-ans-item">
-                                <h4 class="billing__faqs--que">
-                                    <span class="billing__faqs--que-text">
+                            <div class="billing__faqs-que-ans-item">
+                                <h4 class="billing__faqs-que">
+                                    <span class="billing__faqs-que-text">
                                         What are "Fast Hours"?</span
                                     >
                                     <svg
@@ -1670,28 +1643,28 @@
                                         ></path>
                                     </svg>
                                 </h4>
-                                <div class="billing__faqs--ans">
-                                    <p class="billing__faqs--ans-para">
+                                <div class="billing__faqs-ans">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis distinctio neque incidunt magni
                                         nulla voluptas id eos?
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
                                     </p>
                                 </div>
                             </div>
-                            <div class="billing__faqs--que-ans-item">
-                                <h4 class="billing__faqs--que">
-                                    <span class="billing__faqs--que-text">
+                            <div class="billing__faqs-que-ans-item">
+                                <h4 class="billing__faqs-que">
+                                    <span class="billing__faqs-que-text">
                                         What are "Fast Hours"?</span
                                     >
                                     <svg
@@ -1710,19 +1683,19 @@
                                         ></path>
                                     </svg>
                                 </h4>
-                                <div class="billing__faqs--ans">
-                                    <p class="billing__faqs--ans-para">
+                                <div class="billing__faqs-ans">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis distinctio neque incidunt magni
                                         nulla voluptas id eos?
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
                                     </p>
-                                    <p class="billing__faqs--ans-para">
+                                    <p class="billing__faqs-ans-para">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Eum qui quisquam,
                                         debitis
@@ -1739,12 +1712,12 @@
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const faqItems = document.querySelectorAll(
-                    ".billing__faqs--que-ans-item"
+                    ".billing__faqs-que-ans-item"
                 );
 
                 faqItems.forEach(function (item) {
-                    const answer = item.querySelector(".billing__faqs--ans");
-                    const question = item.querySelector(".billing__faqs--que");
+                    const answer = item.querySelector(".billing__faqs-ans");
+                    const question = item.querySelector(".billing__faqs-que");
 
                     item.addEventListener("click", function () {
                         if (answer.classList.contains("active")) {
@@ -1828,9 +1801,9 @@
         </script>
         <script>
             let hamburgerBtn = document.querySelector(
-                ".mobile__menu--hamburger"
+                ".billing__hamburger-btn"
             );
-            let crossBtn = document.querySelector(".mobile__menu--cross");
+            let crossBtn = document.querySelector(".billing__cross-btn");
             let sidebarWrapper = document.querySelector(".sidebar__wrapper");
             let billingWrapper = document.querySelector(".billing__wrapper");
 

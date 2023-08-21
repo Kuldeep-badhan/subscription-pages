@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const url = new URL(currentURL);
 
-    const navLinks = document.querySelectorAll(".sidebar__nav-link");
+    const navLinks = document.querySelectorAll(".sidebar-nav__list-link");
 
     navLinks.forEach((link) => {
         if (url.pathname == link.getAttribute("href")) {

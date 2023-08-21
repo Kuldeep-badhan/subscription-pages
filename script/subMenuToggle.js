@@ -1,33 +1,35 @@
-let subMenuToggleBtn = document.getElementsByClassName(
-    "sidebar__menu-toggle-btn"
-)[0];
-let subMenu = document.getElementsByClassName("sidebar__menu")[0];
 let sidebar = document.querySelector(".sidebar");
+let subMenu = document.querySelector(".sidebar__menu");
+let subMenuToggleBtn = document.querySelector(".sidebar__menu-toggle-btn");
 
 sidebar.addEventListener("mouseleave", () => {
-    if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn-focus"))
+    if (subMenuToggleBtn.classList.contains("active"))
         subMenu.style.display = "none";
 });
 
 sidebar.addEventListener("mouseenter", () => {
-    if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn-focus"))
+    if (subMenuToggleBtn.classList.contains("active"))
         subMenu.style.display = "block";
 });
 
-subMenuToggleBtn.addEventListener("click", () => {
-    if (subMenu.style.display === "none") {
-        subMenu.style.display = "block";
-        subMenuToggleBtn.classList.add("sidebar__menu-toggle-btn-focus");
-    } else {
-        subMenu.style.display = "none";
-        subMenuToggleBtn.classList.remove("sidebar__menu-toggle-btn-focus");
-    }
-});
+subMenuToggleBtn.addEventListener(
+    "click",
+    () => {
+        if (subMenu.style.display === "none") {
+            subMenu.style.display = "block";
+            subMenuToggleBtn.classList.add("active");
+        } else {
+            subMenu.style.display = "none";
+            subMenuToggleBtn.classList.remove("active");
+        }
+    },
+    true
+);
 
 document.addEventListener("click", (event) => {
     const target = event.target;
     if (target !== subMenuToggleBtn && target !== subMenu) {
         subMenu.style.display = "none";
-        subMenuToggleBtn.classList.remove("sidebar__menu-toggle-btn-focus");
+        subMenuToggleBtn.classList.remove("active");
     }
 });
