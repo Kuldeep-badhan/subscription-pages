@@ -763,23 +763,25 @@
                 ".mobile__menu--hamburger"
             );
             let crossBtn = document.querySelector(".mobile__menu--cross");
-            let dashboard = document.querySelector(".dashboard");
+            let dashboardWrapper = document.querySelector(
+                ".dashboard__wrapper"
+            );
             let sidebarWrapper = document.querySelector(".sidebar__wrapper");
 
             hamburgerBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.remove("active");
                 crossBtn.classList.add("active");
                 sidebarWrapper.classList.add("active");
-                dashboard.classList.add("active");
-                document.documentElement.style.overflow = "hidden";
+                dashboardWrapper.classList.add("active");
+                // document.documentElement.style.overflow = "hidden";
             });
 
             crossBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.add("active");
                 crossBtn.classList.remove("active");
                 sidebarWrapper.classList.remove("active");
-                dashboard.classList.remove("active");
-                document.documentElement.style.overflow = "visible";
+                dashboardWrapper.classList.remove("active");
+                // document.documentElement.style.overflow = "visible";
             });
         </script>
     </body>

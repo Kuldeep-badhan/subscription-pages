@@ -329,10 +329,12 @@
 }
 
 @media screen and (max-width: 1350px) {
-    .billing {
+    .billing__wrapper {
         transform: translateX(-290px);
         transition: all 0.3s;
-        // overflow-x: hidden;
+        overflow-x: hidden;
+    }
+    .billing {
         &__main {
             min-width: 100%;
 
@@ -383,8 +385,7 @@
             }
         }
     }
-    .billing.active {
-        overflow-x: hidden;
+    .billing__wrapper.active {
         transform: translateX(0px);
     }
 }

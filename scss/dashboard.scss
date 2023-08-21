@@ -381,12 +381,14 @@
 }
 
 @media screen and (max-width: 1350px) {
-    .dashboard {
+    .dashboard__wrapper {
         transform: translateX(-290px);
         transition: all 0.3s;
-        // overflow-x: hidden;
-
+        overflow-x: hidden;
+    }
+    .dashboard {
         .main {
+            z-index: 1000;
             min-width: 100%;
 
             &__search {
@@ -433,7 +435,7 @@
         }
     }
 
-    .dashboard.active {
+    .dashboard__wrapper.active {
         transform: translateX(0px);
     }
 }

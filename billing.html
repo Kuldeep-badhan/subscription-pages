@@ -1832,13 +1832,13 @@
             );
             let crossBtn = document.querySelector(".mobile__menu--cross");
             let sidebarWrapper = document.querySelector(".sidebar__wrapper");
-            let billingPage = document.querySelector(".billing");
+            let billingWrapper = document.querySelector(".billing__wrapper");
 
             hamburgerBtn.addEventListener("click", () => {
                 hamburgerBtn.classList.remove("active");
                 crossBtn.classList.add("active");
                 sidebarWrapper.classList.add("active");
-                billingPage.classList.add("active");
+                billingWrapper.classList.add("active");
                 document.documentElement.style.overflow = "hidden";
             });
 
@@ -1846,7 +1846,7 @@
                 hamburgerBtn.classList.add("active");
                 crossBtn.classList.remove("active");
                 sidebarWrapper.classList.remove("active");
-                billingPage.classList.remove("active");
+                billingWrapper.classList.remove("active");
                 document.documentElement.style.overflow = "visible";
             });
         </script>
