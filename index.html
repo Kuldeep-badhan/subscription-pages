@@ -17,8 +17,8 @@
         <div class="home">
             <header class="header__container">
                 <div class="header">
-                    <div class="header-left">
-                        <a href="/" class="logo-name">
+                    <div class="header-logo">
+                        <a href="/" class="header-logo__attachment">
                             <img src="/img/logo.jpg" alt="Logo" />
                         </a>
                         <!-- <div class="nav-links">
@@ -62,10 +62,10 @@
                             </a>
                         </div> -->
                     </div>
-                    <div class="header-right">
-                        <div class="mobile__menu">
+                    <div class="header-menu">
+                        <div class="header-menu__mobile">
                             <span
-                                class="mobile__menu--hamburger mobile__menu--btn active"
+                                class="header-menu__hamburger header-menu__hamburger--btn header-menu__hamburger--active"
                             >
                                 <svg
                                     size="25"
@@ -87,7 +87,7 @@
                                     </g>
                                 </svg>
                             </span>
-                            <span class="mobile__menu--cross mobile__menu--btn">
+                            <span class="header-menu__cross header-menu__cross--btn">
                                 <svg
                                     size="25"
                                     color="white"
@@ -109,8 +109,8 @@
                                 </svg>
                             </span>
                         </div>
-                        <div class="header__btns">
-                            <a href="#premium-link" class="premium__btn">
+                        <div class="header-menu__button-group">
+                            <a href="#premium-link" class="header-menu__premium header-menu__premium--btn">
                                 <svg
                                     width="24"
                                     height="24"
@@ -223,15 +223,15 @@
                                 </svg>
                                 <span> Premium </span>
                             </a>
-                            <button class="discord-login__btn">
+                            <button class="header-menu__discord header-menu__discord--btn">
                                 Login with Discord
                             </button>
                         </div>
-                        <div class="user__info">
-                            <div class="user__info--avatar">
+                        <div class="header-menu__user">
+                            <div class="header-menu__avatar">
                                 <img src="/img/discord.png" alt="User Avatar" />
                             </div>
-                            <div class="user__info--name">Kuldeep badhan</div>
+                            <div class="header-menu__name">Kuldeep badhan</div>
                             <svg
                                 width="24"
                                 height="24"
@@ -248,37 +248,21 @@
                                     stroke-linejoin="round"
                                 ></path>
                             </svg>
-                            <div class="user__info--sub-menu sub-menu">
-                                <h4 class="sub-menu__title">ODDITS</h4>
-                                <a href="#" class="sub-menu__item"
-                                    >Personal rank card</a
-                                >
-                                <a href="#" class="sub-menu__item">Pro</a>
-                                <a href="#" class="sub-menu__item"
-                                    >Monetize community</a
-                                >
-                                <h4 class="sub-menu__title">SERVERS OWNERS</h4>
-                                <a href="#" class="sub-menu__item"
-                                    >My servers</a
-                                >
-                                <a href="#" class="sub-menu__item"
-                                    >Transfer premium</a
-                                >
-                                <a href="#" class="sub-menu__item"
-                                    >Manage NFT Pass</a
-                                >
-                                <h4 class="sub-menu__title">PAYMENT</h4>
+                            <div class="header-menu__list">
+                                <h4 class="header-menu__list-title">ODDITS</h4>
+                                <a href="#" class="header-menu__item">Personal rank card</a>
+                                <a href="#" class="header-menu__item">Pro</a>
+                                <a href="#" class="header-menu__item">Monetize community</a>
+                                <h4 class="header-menu__list-title">SERVERS OWNERS</h4>
+                                <a href="#" class="sub-menu__item">My servers</a>
+                                <a href="#" class="sub-menu__item">Transfer premium</a>
+                                <a href="#" class="sub-menu__item">Manage NFT Pass</a>
+                                <h4 class="header-menu__list-title">PAYMENT</h4>
                                 <a href="#" class="sub-menu__item">Billing</a>
-
-                                <div class="sub-meu__line"></div>
                                 <a href="#" class="sub-menu__item">Language</a>
-                                <a href="#" class="sub-menu__item"
-                                    >Changelogs</a
-                                >
-                                <a href="#" class="sub-menu__item"
-                                    >Support server</a
-                                >
-                                <span class="sub-menu__item">Logout</span>
+                                <a href="#" class="sub-menu__item">Changelogs</a>
+                                <a href="#" class="sub-menu__item">Support server</a>
+                                <a href="#" class="sub-menu__item">Logout</a>
                             </div>
                         </div>
                     </div>
@@ -303,9 +287,9 @@
                         ></path>
                     </svg>
                 </div>
-                <div>
+                <div class="about__content">
                     <div class="about__header">
-                        <div class="about__header--title">About</div>
+                        <div class="about__header-title">About</div>
                     </div>
                     <div class="about__body">
                         <p class="about__paragraph">
@@ -319,315 +303,314 @@
                             staff and an incredible set of advisors.
                         </p>
                         <div class="about__executives">
-                            <h4 class="about__executives--heading">
+                            <h4 class="about__executives-heading">
                                 Executives
                             </h4>
-                            <h3 class="about__executives--name">David Holz</h3>
-                            <p class="about__executives--desc">
+                            <h3 class="about__executives-name">David Holz</h3>
+                            <p class="about__executives-desc">
                                 Previously: Founder Leap Motion, Researcher at
                                 NASA, Max Planck
                             </p>
                             <p></p>
                         </div>
                         <div class="about__advisors">
-                            <h4 class="about__advisors--heading">Advisors</h4>
-                            <div class="about__advisors--list">
-                                <div>
-                                    <h3 class="about__advisors--name">
+                            <h4 class="about__advisors-heading">Advisors</h4>
+                            <div class="about__advisors-list">
+                                <div class="about__advisors-item">
+                                    <h3 class="about__advisors-name">
                                         Jim Keller
                                     </h3>
-                                    <p class="about__advisors--desc">
+                                    <p class="about__advisors-desc">
                                         Lead Silicon at Apple, AMD, Tesla,
                                         Intel, Coauthor X86-64, CTO Tenstorrent
                                     </p>
                                 </div>
-                                <div>
-                                    <h3 class="about__advisors--name">
+                                <div class="about__advisors-item">
+                                    <h3 class="about__advisors-name">
                                         Jim Keller
                                     </h3>
-                                    <p class="about__advisors--desc">
+                                    <p class="about__advisors-desc">
                                         Lead Silicon at Apple, AMD, Tesla,
                                         Intel, Coauthor X86-64, CTO Tenstorrent
                                     </p>
                                 </div>
-                                <div>
-                                    <h3 class="about__advisors--name">
+                                <div class="about__advisors-item">
+                                    <h3 class="about__advisors-name">
                                         Jim Keller
                                     </h3>
-                                    <p class="about__advisors--desc">
+                                    <p class="about__advisors-desc">
                                         Lead Silicon at Apple, AMD, Tesla,
                                         Intel, Coauthor X86-64, CTO Tenstorrent
                                     </p>
                                 </div>
-                                <div>
-                                    <h3 class="about__advisors--name">
+                                <div class="about__advisors-item">
+                                    <h3 class="about__advisors-name">
                                         Jim Keller
                                     </h3>
-                                    <p class="about__advisors--desc">
+                                    <p class="about__advisors-desc">
                                         Lead Silicon at Apple, AMD, Tesla,
                                         Intel, Coauthor X86-64, CTO Tenstorrent
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="about__research-engineer">
-                            <h3 class="about__research-engineer--title">
+                        <div class="about__research">
+                            <h3 class="about__research-title">
                                 Research and Engineering
                             </h3>
-                            <div class="employee-names">
-                                <span class="employee-name">Daniel</span>
-                                <span class="employee-name">Max</span>
-                                <span class="employee-name">Jack</span>
-                                <span class="employee-name">Thomas</span>
-                                <span class="employee-name">Red</span>
-                                <span class="employee-name">Sam</span>
-                                <span class="employee-name">Nadir</span>
-                                <span class="employee-name">Sebastian</span>
+                            <div class="about__research-employee">
+                                <span class="about__research-employee-name">Daniel</span>
+                                <span class="about__research-employee-name">Max</span>
+                                <span class="about__research-employee-name">Jack</span>
+                                <span class="about__research-employee-name">Thomas</span>
+                                <span class="about__research-employee-name">Red</span>
+                                <span class="about__research-employee-name">Sam</span>
+                                <span class="about__research-employee-name">Nadir</span>
+                                <span class="about__research-employee-name">Sebastian</span>
                             </div>
                         </div>
-                        <div class="about__legal-finance">
-                            <h3 class="about__legal-finance--title">
+                        <div class="about__legal">
+                            <h3 class="about__legal-title">
                                 Legal and Finance
                             </h3>
-                            <div class="employee-detail">
-                                <div class="employee-desc">
-                                    <h3 class="employee-name">Daniel</h3>
+                            <div class="about__legal-employee">
+                                <div class="about__legal-list">
+                                    <h3 class="about__legal-name">Daniel</h3>
 
-                                    <div class="employee-post">
+                                    <div class="about__legal-designation">
                                         legal advisor
                                     </div>
                                 </div>
-                                <div class="employee-desc">
-                                    <h3 class="employee-name">Nadia Ali</h3>
-                                    <!-- <div class="employee-post">legal advisor</div> -->
+                                <div class="about__legal-list">
+                                    <h3 class="about__legal-name">Daniel</h3>
+
+                                    <div class="about__legal-designation">
+                                        legal advisor
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="about__community-management">
-                            <h3 class="about__community-management--title">
+                        <div class="about__community">
+                            <h3 class="about__community-title">
                                 Community Management
                             </h3>
-                            <div class="employee-names">
-                                <span class="employee-name"
-                                    >fnuckle (Katryna)</span
-                                >
-                                <span class="employee-name">Ancient Chaos</span>
+                            <div class="about__community-list">
+                                <span class="about__community-name">fnuckle (Katryna)</span>
+                                <span class="about__community-name">Ancient Chaos</span>
                             </div>
                         </div>
-                        <div class="about__employee-container">
-                            <h3 class="employee-category">
+                        <div class="about__employee">
+                            <h3 class="about__employee-title">
                                 Discord Moderators and Guides
                             </h3>
-                            <div class="employee-grid">
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
-                                        >Afterburner</span
-                                    >
-                                    <span class="employee-name">AmirKerr</span>
+                            <div class="about__employee-list">
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation">Afterburner</span>
+                                    <span class="about__employee-name">AmirKerr</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >bartek</span
                                     >
-                                    <span class="employee-name">Blue Man</span>
+                                    <span class="about__employee-name">Blue Man</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >ChrisViau</span
                                     >
-                                    <span class="employee-name">cody boy</span>
+                                    <span class="about__employee-name">cody boy</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >croakie</span
                                     >
-                                    <span class="employee-name">dezm0n</span>
+                                    <span class="about__employee-name">dezm0n</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >DigitalDragon</span
                                     >
-                                    <span class="employee-name">Eikyuu</span>
+                                    <span class="about__employee-name">Eikyuu</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Feonix</span
                                     >
-                                    <span class="employee-name">fractl</span>
+                                    <span class="about__employee-name">fractl</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >isaacq</span
                                     >
-                                    <span class="employee-name">jayscott</span>
+                                    <span class="about__employee-name">jayscott</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >kav2k</span
                                     >
-                                    <span class="employee-name"
+                                    <span class="about__employee-name"
                                         >MatthewHaggett</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Meggirbot</span
                                     >
-                                    <span class="employee-name">Reiko</span>
+                                    <span class="about__employee-name">Reiko</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Sanne (Ms. Unicorn)</span
                                     >
-                                    <span class="employee-name">schofe</span>
+                                    <span class="about__employee-name">schofe</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Shade</span
                                     >
-                                    <span class="employee-name">Sirkut</span>
+                                    <span class="about__employee-name">Sirkut</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Spookydan</span
                                     >
-                                    <span class="employee-name">SquireZed</span>
+                                    <span class="about__employee-name">SquireZed</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >starshadowx2</span
                                     >
-                                    <span class="employee-name">Tallath</span>
+                                    <span class="about__employee-name">Tallath</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Xaphedo</span
                                     >
-                                    <span class="employee-name">ajmars</span>
+                                    <span class="about__employee-name">ajmars</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >ameades</span
                                     >
-                                    <span class="employee-name">Apricus</span>
+                                    <span class="about__employee-name">Apricus</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >bonnie bear</span
                                     >
-                                    <span class="employee-name">clarinet</span>
+                                    <span class="about__employee-name">clarinet</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >classpectanon</span
                                     >
-                                    <span class="employee-name"
+                                    <span class="about__employee-name"
                                         >dafyomilimerick</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation">Dee</span>
-                                    <span class="employee-name">dudu</span>
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation">Dee</span>
+                                    <span class="about__employee-name">dudu</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation">eku</span>
-                                    <span class="employee-name"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation">eku</span>
+                                    <span class="about__employee-name"
                                         >Eojin’s Reviews</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >fab1an</span
                                     >
-                                    <span class="employee-name">fl4min_xX</span>
+                                    <span class="about__employee-name">fl4min_xX</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >firefly</span
                                     >
-                                    <span class="employee-name"
+                                    <span class="about__employee-name"
                                         >gigglethumps</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Goofball</span
                                     >
-                                    <span class="employee-name">Historian</span>
+                                    <span class="about__employee-name">Historian</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Hoxxonia</span
                                     >
-                                    <span class="employee-name">Ippity</span>
+                                    <span class="about__employee-name">Ippity</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >jrdsctt</span
                                     >
-                                    <span class="employee-name">Kath</span>
+                                    <span class="about__employee-name">Kath</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Kevazy</span
                                     >
-                                    <span class="employee-name"
+                                    <span class="about__employee-name"
                                         >Kinky Kong</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Krakput</span
                                     >
-                                    <span class="employee-name">Kyun</span>
+                                    <span class="about__employee-name">Kyun</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Larc</span
                                     >
-                                    <span class="employee-name">Marigold</span>
+                                    <span class="about__employee-name">Marigold</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Molang</span
                                     >
-                                    <span class="employee-name"
+                                    <span class="about__employee-name"
                                         >noodlecake</span
                                     >
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >PtitCitron</span
                                     >
-                                    <span class="employee-name">Replicant</span>
+                                    <span class="about__employee-name">Replicant</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation">Roc</span>
-                                    <span class="employee-name">ShaneMcG</span>
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation">Roc</span>
+                                    <span class="about__employee-name">ShaneMcG</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Soar</span
                                     >
-                                    <span class="employee-name">STON3ZY</span>
+                                    <span class="about__employee-name">STON3ZY</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >SunshineyDay</span
                                     >
-                                    <span class="employee-name">TaylorV</span>
+                                    <span class="about__employee-name">TaylorV</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >theo3</span
                                     >
-                                    <span class="employee-name">Trent</span>
+                                    <span class="about__employee-name">Trent</span>
                                 </div>
-                                <div class="employee-description">
-                                    <span class="employee-occupation"
+                                <div class="about__employee-guides">
+                                    <span class="about__employee-occupation"
                                         >Weaving Light</span
                                     >
-                                    <span class="employee-name">Zu</span>
+                                    <span class="about__employee-name">Zu</span>
                                 </div>
                             </div>
                         </div>
@@ -655,7 +638,7 @@
                 </div>
                 <div class="careers__content">
                     <div class="careers__header">
-                        <div class="careers__header--title">Careers</div>
+                        <div class="careers__header-title">Careers</div>
                     </div>
                     <div class="careers__body">
                         <p class="careers__paragraph">
@@ -698,7 +681,7 @@
                 </div>
                 <div class="contact__body">
                     <div class="contact__header">
-                        <div class="contact__header--title">Contact</div>
+                        <div class="contact__header-title">Contact</div>
                     </div>
                     <div class="contact__body">
                         <p class="contact__paragraph">
