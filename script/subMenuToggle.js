@@ -1,6 +1,7 @@
 let sidebar = document.querySelector(".sidebar");
 let subMenu = document.querySelector(".sidebar__menu");
 let subMenuToggleBtn = document.querySelector(".sidebar__menu-toggle-btn");
+let subMenuToggleBtnIcon = document.querySelector(".sidebar__menu-btn-icon");
 
 sidebar.addEventListener("mouseleave", () => {
     if (subMenuToggleBtn.classList.contains("active"))
@@ -15,6 +16,7 @@ sidebar.addEventListener("mouseenter", () => {
 subMenuToggleBtn.addEventListener(
     "click",
     () => {
+        console.log("button click");
         if (subMenu.style.display === "none") {
             subMenu.style.display = "block";
             subMenuToggleBtn.classList.add("active");
@@ -28,7 +30,11 @@ subMenuToggleBtn.addEventListener(
 
 document.addEventListener("click", (event) => {
     const target = event.target;
-    if (target !== subMenuToggleBtn && target !== subMenu) {
+    if (
+        target !== subMenuToggleBtn &&
+        target !== subMenu &&
+        target !== subMenuToggleBtnIcon
+    ) {
         subMenu.style.display = "none";
         subMenuToggleBtn.classList.remove("active");
     }
