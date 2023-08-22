@@ -1,17 +1,17 @@
-@import "./global.scss";
-
 .billing__wrapper {
-    background-color: #080a16;
+    background-color: $primary-color;
 }
 
 .billing {
     display: flex;
+    height: 100vh;
 
     &__content {
         width: 80%;
-        background-color: #080a16;
+        background-color: $primary-color;
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     &__mobile-menu {
@@ -100,12 +100,13 @@
         padding: 10px 95px;
         border-radius: 10px;
         color: #94a3b8;
+
         &:hover {
-            color: #d9dde7;
+            color: #d9dde780;
             background-color: rgba(226, 232, 240, 0.1);
         }
 
-        &.active {
+        &--active {
             color: #d9dde7;
             background-color: rgba(226, 232, 240, 0.2);
         }
@@ -315,16 +316,20 @@
             display: none;
         }
 
-        &-que.active {
-            svg {
-                transform: rotate(180deg);
+        &-que {
+            &--active {
+                svg {
+                    transform: rotate(180deg);
+                }
             }
         }
 
-        &-ans.active {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        &-ans {
+            &--active {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     }
 }
@@ -368,12 +373,16 @@
             }
         }
 
-        &__hamburger-btn.active {
-            display: flex;
+        &__hamburger-btn {
+            &--active {
+                display: flex;
+            }
         }
 
-        &__cross-btn.active {
-            display: flex;
+        &__cross-btn {
+            &--active {
+                display: flex;
+            }
         }
 
         &__plan {
@@ -386,8 +395,10 @@
             }
         }
     }
-    .billing__wrapper.active {
-        transform: translateX(0px);
+    .billing__wrapper {
+        &--active {
+            transform: translateX(0px);
+        }
     }
 }
 

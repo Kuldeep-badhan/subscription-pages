@@ -9,18 +9,16 @@
             href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
-
-        <link rel="stylesheet" href="/css/billing.css" />
-        <link rel="stylesheet" href="/css/sidebar.css" />
-        <title>Oddits</title>
+        <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Oddities</title>
     </head>
     <body class="billing__wrapper">
         <main class="billing">
             <div class="sidebar__wrapper">
                 <div class="sidebar">
                     <div class="sidebar-nav">
-                        <div class="sidebar-nav__logo">Oddits</div>
+                        <div class="sidebar-nav__logo">Oddities</div>
                         <nav class="sidebar-nav__list-container">
                             <ul class="sidebar-nav__list">
                                 <li class="sidebar-nav__list-item">
@@ -324,7 +322,9 @@
             </div>
             <div class="billing__content">
                 <div class="billing__mobile-menu">
-                    <span class="billing__hamburger-btn active">
+                    <span
+                        class="billing__hamburger-btn billing__hamburger-btn--active"
+                    >
                         <svg
                             size="25"
                             color="white"
@@ -408,7 +408,8 @@
                         <span class="billing__yearly billing__selector"
                             >Yearly Billing</span
                         >
-                        <span class="billing__monthly billing__selector active"
+                        <span
+                            class="billing__monthly billing__selector billing__monthly--active"
                             >Monthly Billing</span
                         >
                     </div>
@@ -1706,8 +1707,8 @@
                 </div>
             </div>
         </main>
-        <script src="./script/subMenuToggle.js"></script>
-        <script src="./script/navActive.js"></script>
+        <script src="./script/sidebar/subMenuToggle.js"></script>
+        <script src="./script/sidebar/navActive.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const faqItems = document.querySelectorAll(
@@ -1719,12 +1720,20 @@
                     const question = item.querySelector(".billing__faqs-que");
 
                     item.addEventListener("click", function () {
-                        if (answer.classList.contains("active")) {
-                            answer.classList.remove("active");
-                            question.classList.remove("active");
+                        if (
+                            answer.classList.contains(
+                                "billing__faqs-ans--active"
+                            )
+                        ) {
+                            answer.classList.remove(
+                                "billing__faqs-ans--active"
+                            );
+                            question.classList.remove(
+                                "billing__faqs-que--active"
+                            );
                         } else {
-                            answer.classList.add("active");
-                            question.classList.add("active");
+                            answer.classList.add("billing__faqs-ans--active");
+                            question.classList.add("billing__faqs-que--active");
                         }
                     });
                 });
@@ -1758,42 +1767,47 @@
                         montlyBills.style.display = "grid";
                         yearlyBills.style.display = "none";
                     }
+
                     yearlyLinks.forEach((link) => {
                         link.addEventListener("click", () => {
                             yearlyBills.style.display = "grid";
                             montlyBills.style.display = "none";
+
                             if (btn.classList.contains("billing__yearly")) {
-                                btn.classList.add("active");
-                            } else {
-                                btn.classList.remove("active");
+                                btn.classList.add("billing__yearly--active");
                             }
+
+                            btn.classList.remove("billing__monthly--active");
                         });
                     });
+
                     monthlyLinks.forEach((link) => {
                         link.addEventListener("click", () => {
                             yearlyBills.style.display = "none";
                             montlyBills.style.display = "grid";
+
                             if (btn.classList.contains("billing__monthly")) {
-                                btn.classList.add("active");
-                            } else {
-                                btn.classList.remove("active");
+                                btn.classList.add("billing__monthly--active");
                             }
+                            btn.classList.remove("billing__yearly--active");
                         });
                     });
 
                     btn.addEventListener("click", () => {
+                        billToggleBtns.forEach((btn) => {
+                            btn.classList.remove("billing__monthly--active");
+                            btn.classList.remove("billing__yearly--active");
+                        });
+
                         if (btn.classList.contains("billing__yearly")) {
                             yearlyBills.style.display = "grid";
                             montlyBills.style.display = "none";
+                            btn.classList.add("billing__yearly--active");
                         } else if (btn.classList.contains("billing__monthly")) {
+                            btn.classList.add("billing__monthly--active");
                             montlyBills.style.display = "grid";
                             yearlyBills.style.display = "none";
                         }
-                        billToggleBtns.forEach((btn) => {
-                            btn.classList.remove("active");
-                        });
-
-                        btn.classList.add("active");
                     });
                 });
             });
@@ -1807,18 +1821,18 @@
             let billingWrapper = document.querySelector(".billing__wrapper");
 
             hamburgerBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.remove("active");
-                crossBtn.classList.add("active");
-                sidebarWrapper.classList.add("active");
-                billingWrapper.classList.add("active");
+                hamburgerBtn.classList.remove("billing__hamburger-btn--active");
+                crossBtn.classList.add("billing__cross-btn--active");
+                sidebarWrapper.classList.add("sidebar__wrapper--active");
+                billingWrapper.classList.add("billing__wrapper--active");
                 document.documentElement.style.overflow = "hidden";
             });
 
             crossBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.add("active");
-                crossBtn.classList.remove("active");
-                sidebarWrapper.classList.remove("active");
-                billingWrapper.classList.remove("active");
+                hamburgerBtn.classList.add("billing__hamburger-btn--active");
+                crossBtn.classList.remove("billing__cross-btn--active");
+                sidebarWrapper.classList.remove("sidebar__wrapper--active");
+                billingWrapper.classList.remove("billing__wrapper--active");
                 document.documentElement.style.overflow = "visible";
             });
         </script>

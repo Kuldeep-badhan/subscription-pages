@@ -1,16 +1,15 @@
-@import "./global.scss";
-
 .dashboard__wrapper {
-    background-color: #080a16;
+    background-color: $primary-color;
 }
 
 .dashboard {
     display: flex;
+    height: 100vh;
 
     &__content {
         width: 80%;
         padding: 20px;
-        background-color: #080a16;
+        background-color: $primary-color;
         color: white;
         overflow-x: hidden;
     }
@@ -34,9 +33,6 @@
 
     &__search-input {
         flex: 1;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
         border-radius: 40px;
         padding: 15px 20px;
         font-size: 18px;
@@ -130,7 +126,6 @@
     }
 
     &__billing-plan-btn {
-        display: block;
         color: white;
         border: 2px solid #057857;
         background-color: #057857;
@@ -176,7 +171,7 @@
                     background-color: transparent;
                 }
 
-                &.active {
+                &--active {
                     color: white;
                     cursor: default;
                     &:hover {
@@ -235,73 +230,41 @@
                 background-color: #1b2234;
             }
 
-            &--hot.active {
-                background-color: #1b2234;
-                svg {
-                    color: #ef4444;
+            &--hot {
+                &--active {
+                    background-color: #1b2234;
+                    svg {
+                        color: #ef4444;
+                    }
                 }
             }
 
-            &--new.active {
-                background-color: #1b2234;
+            &--new {
+                &--active {
+                    background-color: #1b2234;
 
-                svg {
-                    color: #eab308;
+                    svg {
+                        color: #eab308;
+                    }
                 }
             }
 
-            &--top.active {
-                background-color: #1b2234;
+            &--top {
+                &--active {
+                    background-color: #1b2234;
 
-                svg {
-                    color: #f97316;
+                    svg {
+                        color: #f97316;
+                    }
                 }
             }
 
-            &--favorited.active {
-                background-color: #1b2234;
+            &--favorited {
+                &--active {
+                    background-color: #1b2234;
 
-                svg {
-                    color: #f43f5e;
-                }
-            }
-        }
-
-        &-items--mobile {
-            .custom-select {
-                -moz-appearance: none; /* For Firefox */
-                -webkit-appearance: none; /* For Safari */
-                appearance: none; /* This removes the default styling in some browsers */
-                padding: 10px;
-                border: none;
-                background-color: #080a16;
-                border-radius: 5px;
-                font-size: 14px;
-                color: #c8e8ff;
-                width: 200px;
-
-                &:focus {
-                    outline: none; /* Remove the default focus outline */
-                    background-color: #1e293b99;
-                }
-
-                /* Styling for the dropdown arrow icon */
-                &::after {
-                    content: "\25BC"; /* Unicode for downward arrow */
-                    position: absolute;
-                    top: 50%;
-                    right: 10px;
-                    transform: translateY(-50%);
-                    color: white;
-                    pointer-events: none;
-                }
-
-                /* Styling for the options */
-                option {
-                    &__text {
-                        padding: 10px;
-                        background-color: #0f111d;
-                        color: #c8e8ff;
+                    svg {
+                        color: #f43f5e;
                     }
                 }
             }
@@ -388,8 +351,10 @@
         overflow-x: hidden;
     }
 
-    .dashboard__wrapper.active {
-        transform: translateX(0px);
+    .dashboard__wrapper {
+        &--active {
+            transform: translateX(0px);
+        }
     }
 
     .dashboard {
@@ -421,12 +386,16 @@
             }
         }
 
-        &__hamburger-btn.active {
-            display: flex;
+        &__hamburger-btn {
+            &--active {
+                display: flex;
+            }
         }
 
-        &__cross-btn.active {
-            display: flex;
+        &__cross-btn {
+            &--active {
+                display: flex;
+            }
         }
 
         &-nav {
@@ -449,8 +418,7 @@
         }
 
         &__search-input {
-            padding: 10px;
-            padding-left: 15px;
+            padding: 10px 10px 10px 15px;
             margin-inline: 8px;
             font-size: 14px;
         }

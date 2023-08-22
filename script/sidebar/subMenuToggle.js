@@ -4,12 +4,12 @@ let subMenuToggleBtn = document.querySelector(".sidebar__menu-toggle-btn");
 let subMenuToggleBtnIcon = document.querySelector(".sidebar__menu-btn-icon");
 
 sidebar.addEventListener("mouseleave", () => {
-    if (subMenuToggleBtn.classList.contains("active"))
+    if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn--active"))
         subMenu.style.display = "none";
 });
 
 sidebar.addEventListener("mouseenter", () => {
-    if (subMenuToggleBtn.classList.contains("active"))
+    if (subMenuToggleBtn.classList.contains("sidebar__menu-toggle-btn--active"))
         subMenu.style.display = "block";
 });
 
@@ -19,10 +19,12 @@ subMenuToggleBtn.addEventListener(
         console.log("button click");
         if (subMenu.style.display === "none") {
             subMenu.style.display = "block";
-            subMenuToggleBtn.classList.add("active");
+            subMenuToggleBtn.classList.add("sidebar__menu-toggle-btn--active");
         } else {
             subMenu.style.display = "none";
-            subMenuToggleBtn.classList.remove("active");
+            subMenuToggleBtn.classList.remove(
+                "sidebar__menu-toggle-btn--active"
+            );
         }
     },
     true
@@ -36,6 +38,6 @@ document.addEventListener("click", (event) => {
         target !== subMenuToggleBtnIcon
     ) {
         subMenu.style.display = "none";
-        subMenuToggleBtn.classList.remove("active");
+        subMenuToggleBtn.classList.remove("sidebar__menu-toggle-btn--active");
     }
 });

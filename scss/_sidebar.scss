@@ -2,15 +2,15 @@
     position: sticky;
     top: 0;
     width: 20%;
-    max-height: 100dvh;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #080a16;
+    background-color: $primary-color;
     height: 100%;
+
     &-nav {
         display: flex;
         flex-direction: column;
@@ -79,8 +79,10 @@
                 font-size: 14px;
             }
 
-            &-link.active {
-                background-color: #1a2d55;
+            &-link {
+                &--active {
+                    background-color: #1a2d55;
+                }
             }
         }
     }
@@ -158,13 +160,15 @@
         }
     }
 
-    &__menu-toggle-btn.active {
-        &:focus {
-            outline: 2px solid #4298e1;
-            background-color: rgba(59, 130, 246, 0.2);
-        }
-        &:hover {
-            background-color: rgba(59, 130, 246, 0.4);
+    &__menu-toggle-btn {
+        &--active {
+            &:focus {
+                outline: 2px solid #4298e1;
+                background-color: rgba(59, 130, 246, 0.2);
+            }
+            &:hover {
+                background-color: rgba(59, 130, 246, 0.4);
+            }
         }
     }
 
@@ -232,7 +236,7 @@
     .sidebar__wrapper {
         position: sticky;
         top: 0;
-        background-color: #080a16;
+        background-color: $primary-color;
         padding: 10px;
         min-width: 290px;
     }

@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach((link) => {
         if (url.pathname == link.getAttribute("href")) {
-            link.classList.add("active");
+            link.classList.add("sidebar-nav__list-link--active");
         } else {
-            link.classList.remove("active");
+            link.classList.remove("sidebar-nav__list-link--active");
         }
     });
 });

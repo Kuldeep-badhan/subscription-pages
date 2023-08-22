@@ -9,17 +9,16 @@
             href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/css/sidebar.css" />
-        <link rel="stylesheet" href="/css/dashboard.css" />
-        <title>Oddits</title>
-        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
+        <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Oddities</title>
     </head>
     <body class="dashboard__wrapper">
         <div class="dashboard">
             <div class="sidebar__wrapper">
                 <div class="sidebar">
                     <div class="sidebar-nav">
-                        <div class="sidebar-nav__logo">Oddits</div>
+                        <div class="sidebar-nav__logo">Oddities</div>
                         <nav class="sidebar-nav__list-container">
                             <ul class="sidebar-nav__list">
                                 <li class="sidebar-nav__list-item">
@@ -324,7 +323,9 @@
             <div class="dashboard__content">
                 <div class="dashboard__search">
                     <div class="dashboard__mobile-menu">
-                        <span class="dashboard__hamburger-btn active">
+                        <span
+                            class="dashboard__hamburger-btn dashboard__hamburger-btn--active"
+                        >
                             <svg
                                 size="25"
                                 color="white"
@@ -781,8 +782,8 @@
                 </div>
             </div>
         </div>
-        <script src="./script/subMenuToggle.js"></script>
-        <script src="./script/navActive.js"></script>
+        <script src="./script/sidebar/subMenuToggle.js"></script>
+        <script src="./script/sidebar/navActive.js"></script>
         <script>
             // hot new etc active state doeser
             document.addEventListener("DOMContentLoaded", () => {
@@ -792,11 +793,27 @@
 
                 navItems.forEach((item) => {
                     item.addEventListener("click", () => {
+                        let modifierClass = Array.from(item.classList).filter(
+                            (className) => {
+                                return className.includes("--");
+                            }
+                        )[0];
                         navItems.forEach((navItem) => {
-                            navItem.classList.remove("active");
+                            let modifierClass = Array.from(
+                                navItem.classList
+                            ).filter((className) => {
+                                return className.includes("--");
+                            })[0];
+                            navItem.classList.remove(
+                                `${modifierClass}--active`
+                            );
+                            navItem.classList.remove(
+                                `dashboard-nav__item--active`
+                            );
                         });
 
-                        item.classList.add("active");
+                        item.classList.add(`${modifierClass}--active`);
+                        item.classList.add(`dashboard-nav__item--active`);
                     });
                 });
             });
@@ -811,16 +828,18 @@
             );
 
             hamburgerBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.remove("active");
-                crossBtn.classList.add("active");
-                dashboardWrapper.classList.add("active");
+                hamburgerBtn.classList.remove(
+                    "dashboard__hamburger-btn--active"
+                );
+                crossBtn.classList.add("dashboard__cross-btn--active");
+                dashboardWrapper.classList.add("dashboard__wrapper--active");
                 document.documentElement.style.overflow = "hidden";
             });
 
             crossBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.add("active");
-                crossBtn.classList.remove("active");
-                dashboardWrapper.classList.remove("active");
+                hamburgerBtn.classList.add("dashboard__hamburger-btn--active");
+                crossBtn.classList.remove("dashboard__cross-btn--active");
+                dashboardWrapper.classList.remove("dashboard__wrapper--active");
                 document.documentElement.style.overflow = "visible";
             });
         </script>

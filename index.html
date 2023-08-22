@@ -9,9 +9,9 @@
             href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
-        <link rel="stylesheet" href="/css/home.css" />
-        <title>Oddits</title>
+        <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Oddities</title>
     </head>
     <body class="home__wrapper">
         <div class="home">
@@ -24,7 +24,9 @@
                     </div>
                     <div class="header-menu">
                         <div class="header-menu__mobile">
-                            <span class="header-menu__hamburger-btn active">
+                            <span
+                                class="header-menu__hamburger-btn header-menu__hamburger-btn--active"
+                            >
                                 <svg
                                     size="25"
                                     color="white"
@@ -212,7 +214,9 @@
                                 ></path>
                             </svg>
                             <div class="header-menu__list">
-                                <h4 class="header-menu__list-title">ODDITS</h4>
+                                <h4 class="header-menu__list-title">
+                                    Oddities
+                                </h4>
                                 <a href="#" class="header-menu__list-item"
                                     >Personal rank card</a
                                 >
@@ -797,19 +801,25 @@
             let userSubMenu = document.querySelector(".header-menu__list");
 
             user.addEventListener("click", () => {
-                userSubMenu.classList.toggle("active");
+                userSubMenu.classList.toggle("header-menu__list--active");
             });
 
             hamburgerBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.remove("active");
-                crossBtn.classList.add("active");
-                headerBtns.classList.add("active");
+                hamburgerBtn.classList.remove(
+                    "header-menu__hamburger-btn--active"
+                );
+                crossBtn.classList.add("header-menu__cross-btn--active");
+                headerBtns.classList.add("header-menu__button-group--active");
             });
 
             crossBtn.addEventListener("click", () => {
-                hamburgerBtn.classList.add("active");
-                crossBtn.classList.remove("active");
-                headerBtns.classList.remove("active");
+                hamburgerBtn.classList.add(
+                    "header-menu__hamburger-btn--active"
+                );
+                crossBtn.classList.remove("header-menu__cross-btn--active");
+                headerBtns.classList.remove(
+                    "header-menu__button-group--active"
+                );
             });
         </script>
     </body>
