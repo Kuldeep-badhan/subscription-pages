@@ -21,7 +21,6 @@ button {
 
 .billing {
   display: flex;
-  height: 100vh;
 }
 .billing__content {
   width: 80%;
@@ -462,7 +461,6 @@ button {
 
 .dashboard {
   display: flex;
-  height: 100vh;
 }
 .dashboard__content {
   width: 80%;
@@ -1228,6 +1226,7 @@ button {
   position: sticky;
   top: 0;
   width: 20%;
+  max-height: 100dvh;
 }
 
 .sidebar {
