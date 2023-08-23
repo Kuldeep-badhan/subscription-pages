@@ -1243,9 +1243,21 @@ button {
   padding: 30px 20px;
 }
 .sidebar-nav__logo {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 15px;
   margin-left: 15px;
+}
+.sidebar-nav__logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.sidebar-nav__logo-text {
+  font-size: 18px;
+  font-weight: normal;
   color: #dce0eb;
 }
 .sidebar-nav__line {

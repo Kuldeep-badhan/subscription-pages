@@ -19,10 +19,24 @@
         padding: 30px 20px;
 
         &__logo {
-            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin-bottom: 15px;
             margin-left: 15px;
-            color: #dce0eb;
+
+            &-img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            &-text {
+                font-size: 18px;
+                font-weight: normal;
+                color: #dce0eb;
+            }
         }
 
         &__line {
